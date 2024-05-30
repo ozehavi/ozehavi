@@ -54,7 +54,7 @@ a:hover,
 /* line 34, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 a,
 button {
-  color: #1F1F1F;
+  color: #fff;
   outline: medium none;
 }
 
@@ -1045,15 +1045,19 @@ h3 {
 
 /* line 124, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .book_btn a {
-  background: #D465EF;
+  background: #43a3d0;
   padding: 12px 26px;
   font-size: 14px;
-  font-weight: 500;
   border: 1px solid transparent;
   color: #fff;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+  font-family: cursive;
+}
+
+.phys-title{
+  font-family: cursive;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1065,9 +1069,9 @@ h3 {
 
 /* line 135, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .book_btn a:hover {
-  background: #D465EF;
-  color: #fff;
-  border: 1px solid #D465EF;
+  background: #dbdee4;
+  color: #00a4ff;
+  border: 1px solid #dbdee4;
 }
 
 /* line 143, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
@@ -1577,7 +1581,7 @@ h3 {
 /* line 141, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
   color: #FFF;
-  font-family: "Muli", sans-serif;
+  font-family: cursive;
   font-size: 80px;
   text-transform: capitalize;
   font-weight: 700;
@@ -6783,6 +6787,12 @@ h6 {
 .blog_part .single-home-blog .card ul li span {
   margin-right: 10px;
   font-size: 12px;
+}
+
+.logo{
+  font-size: 20px;
+  letter-spacing: 2px;  
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

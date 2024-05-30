@@ -1376,10 +1376,18 @@ h3 {
   bottom: 0;
 }
 
+.job-title{
+  font-family: cursive;
+}
+
+.job-title span{
+  font-family: "Muli", sans-serif;
+}
+
 /* line 21, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
 .slider_area .single_slider .social_links {
   position: absolute;
-  right: 100px;
+  right: 50px;
   z-index: 999;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -3031,6 +3039,7 @@ h3 {
 .service_area {
   padding-top: 120px;
   padding-bottom: 120px;
+  font-family: cursive;
 }
 
 @media (max-width: 767px) {

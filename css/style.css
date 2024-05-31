@@ -2993,27 +2993,27 @@ h3 {
 }
 
 /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_discuss.scss */
-.discuss_projects {
+.contact {
   background: #001D38;
   padding: 150px 0 50px 0;
 }
 
 @media (max-width: 767px) {
   /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_discuss.scss */
-  .discuss_projects {
+  .contact {
     padding: 50px 0 50px 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_discuss.scss */
-  .discuss_projects {
+  .contact {
     padding: 100px 0 50px 0;
   }
 }
 
 /* line 11, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_discuss.scss */
-.discuss_projects .project_text h3 {
+.contact .project_text h3 {
   color: #fff;
   font-size: 50px;
   font-weight: 700;
@@ -3021,18 +3021,29 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 11, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_discuss.scss */
-  .discuss_projects .project_text h3 {
+  .contact .project_text h3 {
     font-size: 38px;
   }
 }
 
 /* line 19, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_discuss.scss */
-.discuss_projects .project_text p {
+.contact .project_text p {
   color: #fff;
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 30px;
   margin-top: 12px;
+}
+
+.contact .section_title h3{
+  color: #fff;
+  direction: rtl;
+  font-family: cursive;
+}
+
+.contact .section_title span{
+  color: #fff;
+  font-family: cursive;
 }
 
 /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_service.scss */
@@ -6801,6 +6812,11 @@ h6 {
   font-size: 20px;
   letter-spacing: 2px;  
   font-weight: bold;
+}
+
+
+.single_service {
+  min-height: 250px;
 }
 
 /*# sourceMappingURL=style.css.map */

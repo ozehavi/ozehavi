@@ -143,7 +143,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-xl-4 col-md-4">
                     <div class="single_service text-center">
                         <div class="icon">
@@ -300,14 +300,42 @@
     </div>
     <!--/ about_me  -->
 
-    <div class="discuss_projects">
+    <div class="contact">
         <div class="container">
+            <div class="section_title text-center mb-65">
+                <span>צרו איתי קשר</span>
+                <h3>תקבעו את הטיפול שלכם עוד היום!</h3>
+            </div>
             <div class="row">
-                <div class="col-xl-12">
-                    <div class="project_text text-center">
-                        <h3>Let’s discuss for a project</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-                        <a class="boxed-btn3" href="#">Start Talking</a>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="contact_form_area">
+                        <div class="row">
+                            <div class="col-xl-10 offset-xl-1">
+                                <form action="send_email.php" method="POST" id="contact_form">
+                                    <div class="form-group">
+                                        <label for="full_name">Full Name:</label>
+                                        <input type="text" class="form-control" id="full_name" name="full_name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone:</label>
+                                        <input type="text" class="form-control" id="phone" name="phone" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description">Description:</label>
+                                        <textarea class="form-control" id="description" name="description" rows="5" required></textarea>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button type="submit" class="boxed-btn3">Send</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="contact_map">
+                        <!-- Replace the href value with your Google Maps link -->
+                        <a href="https://maps.google.com"><img src="img/contact_map.png" alt="Google Maps"></a>
                     </div>
                 </div>
             </div>

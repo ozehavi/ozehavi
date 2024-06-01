@@ -2998,13 +2998,13 @@ h3 {
 /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_discuss.scss */
 .contact {
   background: #001D38;
-  padding: 150px 0 50px 0;
+  padding: 100px 0 50px 0;
 }
 
 @media (max-width: 767px) {
   /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_discuss.scss */
   .contact {
-    padding: 50px 0 50px 0;
+    padding: 80px 0 50px 0;
   }
 }
 
@@ -3051,7 +3051,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_service.scss */
 .service_area {
-  padding-top: 120px;
+  padding-top: 100px;
   padding-bottom: 120px;
   font-family: cursive;
 }

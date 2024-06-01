@@ -6834,8 +6834,7 @@ h6 {
 
 @media (max-width: 576px) {
   .contact_map iframe {
-    /* width: 100%; */
-    width: 100px;
+    width: 100%;
   }
 }
 

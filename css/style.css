@@ -772,6 +772,8 @@ h3 {
   right: 0;
   margin: auto;
   top: 11px;
+  flex-direction: column-reverse;
+  display: flex;
 }
 
 /* line 28, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slick-nav.scss */

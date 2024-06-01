@@ -404,7 +404,7 @@ h3 {
 /* line 29, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_btn.scss */
 .boxed-btn3 {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
-  background: #615CFD;
+  background: #43a3d0;
   color: #fff;
   display: inline-block;
   padding: 14px 38px;
@@ -417,7 +417,6 @@ h3 {
   -moz-border-radius: 0px;
   border-radius: 0px;
   text-align: center;
-  color: #fff !important;
   text-transform: capitalize;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -428,9 +427,9 @@ h3 {
 
 /* line 47, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_btn.scss */
 .boxed-btn3:hover {
-  border: 1px solid #615CFD;
-  color: #615CFD !important;
-  background: transparent;
+  border: 1px solid #00a4ff;
+  color: #00a4ff !important;
+  background: #dbdee4;
 }
 
 /* line 53, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_btn.scss */
@@ -2140,6 +2139,11 @@ h3 {
   color: #727272;
   margin-top: 20px;
   margin-bottom: 36px;
+}
+
+.about_e_details{
+  direction: rtl;
+  text-align: right;
 }
 
 /* line 43, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
@@ -6817,6 +6821,12 @@ h6 {
 
 .single_service {
   min-height: 250px;
+}
+
+.contact_form_area{
+  text-align: right;
+  direction: rtl;
+  font-family: cursive;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6828,4 +6828,14 @@ h6 {
   font-family: cursive;
 }
 
+.contact_map{
+  padding-top: 35px;
+}
+
+@media (max-width: 576px) {
+  .contact_map iframe {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

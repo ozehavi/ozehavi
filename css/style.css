@@ -6856,6 +6856,9 @@ h6 {
   font-family: cursive;
   color: #001D38;
   word-wrap: break-word; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -227,7 +227,11 @@
                 <div class="col-xl-5 col-md-5">
                     <div class="single_Portfolio">
                         <div class="portfolio_thumb">
-                            <img src="img/portfolio/1.png" alt="">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="img/portfolio/1_source.png">
+                                <source media="(min-width: 601px)" srcset="img/portfolio/1.png">
+                                <img src="img/portfolio/1.png" alt="">
+                            </picture>
                         </div>
                         <a href="img/portfolio/1_source.png" class="popup popup-image"></a>
                         <!-- <div class="portfolio_hover">
@@ -240,7 +244,6 @@
                 <div class="col-xl-7 col-md-7">
                     <div class="single_Portfolio">
                         <div class="portfolio_thumb">
-                            <!-- <img src="img/portfolio/2.png" alt=""> -->
                             <picture>
                                 <source media="(max-width: 600px)" srcset="img/portfolio/2_source.png">
                                 <source media="(min-width: 601px)" srcset="img/portfolio/2.png">

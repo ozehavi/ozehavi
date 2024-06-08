@@ -274,7 +274,11 @@
                 <div class="col-xl-4 col-md-6 col-lg-4">
                     <div class="single_Portfolio">
                         <div class="portfolio_thumb">
-                            <img src="img/portfolio/4.png" alt="">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="img/portfolio/4_source.png">
+                                <source media="(min-width: 601px)" srcset="img/portfolio/4.png">
+                                <img src="img/portfolio/4.png" alt="">
+                            </picture>
                         </div>
                         <a href="img/portfolio/4_source.png" class="popup popup-image"></a>
                         <!-- <div class="portfolio_hover">

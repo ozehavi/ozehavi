@@ -593,6 +593,11 @@ pre code {
     margin-right: auto;
     margin-left: auto
 }
+@media (min-width:768px) {
+    .container {
+        padding-bottom: 100px;
+    }
+}
 
 @media (min-width:576px) {
     .container {

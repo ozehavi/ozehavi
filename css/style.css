@@ -1381,10 +1381,6 @@ h3 {
   bottom: 0;
 }
 
-.job-title span{
-  font-family: "Muli", sans-serif;
-}
-
 /* line 21, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
 .slider_area .single_slider .social_links {
   z-index: 999;
@@ -1563,14 +1559,6 @@ h3 {
   
   .scroll_btn a:visited {
     color: rgb(251, 253, 255);
-  }
-}
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-  /* line 8, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
-  .slider_area .single_slider {
-    height: 620px;
   }
 }
 

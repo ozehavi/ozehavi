@@ -1381,10 +1381,6 @@ h3 {
   bottom: 0;
 }
 
-.job-title{
-  font-family: cursive;
-}
-
 .job-title span{
   font-family: "Muli", sans-serif;
 }
@@ -1417,10 +1413,10 @@ h3 {
 
 /* line 34, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
 .slider_area .single_slider .social_links li a {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   display: inline-block;
-  line-height: 40px;
+  line-height: 60px;
   text-align: center;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1592,11 +1588,12 @@ h3 {
 .slider_area .single_slider .slider_text h3 {
   color: #FFF;
   font-family: cursive;
-  font-size: 80px;
+  font-size: 70px;
   text-transform: capitalize;
   font-weight: 700;
   line-height: 82px;
   margin-bottom: 9px;
+  direction: rtl;
 }
 
 @media (max-width: 767px) {
@@ -1651,12 +1648,11 @@ h3 {
 }
 
 /* line 180, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
-.slider_area .single_slider .slider_text span {
-  font-size: 30px;
-  font-weight: 400;
+.slider_area .single_slider .slider_text .job-description {
   color: #FFFFFF;
   position: relative;
   z-index: 1;
+  font-size: 20px;
 }
 
 /* line 186, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
@@ -1680,7 +1676,7 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 180, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
-  .slider_area .single_slider .slider_text span {
+  .slider_area .single_slider .slider_text .job-description {
     font-size: 16px;
   }
 }
@@ -2529,18 +2525,17 @@ h3 {
 /* line 70, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_footer.scss */
 .contact .socail_links ul li a {
   color: #fff;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   display: inline-block;
   text-align: center;
   background: transparent;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  line-height: 40px !important;
+  line-height: 60px !important;
   margin-right: 7px;
   color: #FFFFFF;
-  line-height: 40px !important;
   border: 1px solid #334A60;
   font-size: 15px;
 }

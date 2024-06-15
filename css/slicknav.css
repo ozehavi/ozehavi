@@ -210,11 +210,12 @@
 }
 
 .slicknav_nav a {
-  text-align: right;
-  font-size: 14px;
+  text-align: center;
+  font-size: 15px;
   font-weight: 400;
   color: #000;
   text-transform: capitalize;
+  font-family: cursive;
 }
 
 .slicknav_nav .slicknav_arrow {
@@ -242,6 +243,7 @@
   right: 5px;
   margin-top: -5px;
   top: -36px;
+  border: 2px solid white;
 }
 .slicknav_menu .slicknav_icon {
 	margin-right: 6px;

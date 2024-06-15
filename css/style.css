@@ -1387,21 +1387,27 @@ h3 {
 
 /* line 21, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
 .slider_area .single_slider .social_links {
-  position: absolute;
-  right: 50px;
   z-index: 999;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: 999;
+}
+
+.social_links ul{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.social_links li{
+  padding: 10px;
 }
 
 @media (max-width: 767px) {
   /* line 21, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
   .slider_area .single_slider .social_links {
-    display: none;
+    /* display: none; */
+  }
+
+  .slider_area .container{
+    padding-top: 30px;
   }
 }
 
@@ -1421,7 +1427,7 @@ h3 {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
   font-size: 15px;
   position: relative;
@@ -1478,7 +1484,7 @@ h3 {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-image: url(../img/banner/maya.png);
+  /* background-image: url(../img/banner/maya.png); */
   width: 720px;
   height: 723px;
   content: '';
@@ -2536,7 +2542,7 @@ h3 {
   line-height: 60px !important;
   margin-right: 7px;
   color: #FFFFFF;
-  border: 1px solid #334A60;
+  border: 1px solid #6b7b8b;
   font-size: 15px;
 }
 

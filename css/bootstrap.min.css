@@ -592,7 +592,11 @@ pre code {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    padding-bottom: 100px;   
+    /* padding-bottom: 100px;    */
+}
+
+.slider_area .container{
+    padding-bottom: 100px;
 }
 
 @media (min-width:576px) {

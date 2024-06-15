@@ -1402,13 +1402,9 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 21, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
-  .slider_area .single_slider .social_links {
-    /* display: none; */
-  }
-
-  .slider_area .container{
-    padding-top: 30px;
-  }
+  /* .slider_area .single_slider .social_links {
+    display: none;
+  } */
 }
 
 /* line 31, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
@@ -1545,7 +1541,7 @@ h3 {
 @media (max-width: 767px) {
   /* line 8, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
   .slider_area .single_slider {
-    height: 500px;
+    height: 700px;
   }
 }
 

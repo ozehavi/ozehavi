@@ -6887,20 +6887,3 @@ h6 {
   color: #001D38;
   word-wrap: break-word; 
 }
-
-.top {
-  --offset: 50px;
-  font-size: 2rem;
-  position: sticky;
-  bottom: 20px;      
-  margin-right:10px;
-  padding: 10px;
-  place-self: end;
-  margin-top: calc(100vh + var(--offset));
-  left: 10px;
-}
-
-.top img{
-  width: 40px;
-  height: 40px;
-}

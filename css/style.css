@@ -1538,12 +1538,34 @@ h3 {
   }
 }
 
-@media (max-width: 767px) {
-  /* line 8, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+/* @media (max-width: 767px) {
   .slider_area .single_slider {
     height: 600px;
   }
+} */
+
+
+.scroll_btn{
+  display: none;
 }
+
+@media (max-width: 767px) {
+  .scroll_btn{
+    display: block;
+    color: rgb(251, 253, 255);
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .scroll_btn:hover {
+    color: rgb(251, 253, 255);
+  }
+  
+  .scroll_btn:visited {
+    color: rgb(251, 253, 255);
+  }
+}
+
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 8, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
@@ -1667,13 +1689,6 @@ h3 {
   left: 110px;
   top: 50%;
   margin-bottom: -1px;
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  /* line 180, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
-  .slider_area .single_slider .slider_text span {
-    font-size: 16px;
-  }
 }
 
 @media (max-width: 767px) {

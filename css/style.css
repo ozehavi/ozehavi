@@ -1557,11 +1557,11 @@ h3 {
     font-size: 2.5rem;
   }
 
-  .scroll_btn:hover {
+  .scroll_btn a:hover {
     color: rgb(251, 253, 255);
   }
   
-  .scroll_btn:visited {
+  .scroll_btn a:visited {
     color: rgb(251, 253, 255);
   }
 }

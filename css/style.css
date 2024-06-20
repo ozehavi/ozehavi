@@ -6887,3 +6887,15 @@ h6 {
   color: #001D38;
   word-wrap: break-word; 
 }
+
+/* Default state: hide the button */
+.call-link {
+  display: none !important;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .call-link {
+      display: inline-block !important; /* or display: block; depending on your layout */
+  }
+}

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -350,69 +351,29 @@
 
     <!-- Recommendations -->
 
-    <div class="recommendation-container">
-        <!-- Recommendations -->
-        <div class="recommendation">
-            <div>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-            </div>
-            <div>
-                <p>"המלצה 1"</p>
-            </div>
-            <div>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-        </div>
-        <div class="recommendation">
-            <div>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-            </div>
-            <div>
-                <p>"המלצה 2"</p>
-            </div>
-            <div>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-        </div>
-        <div class="recommendation">
-            <div>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-            </div>
-            <div>
-                <p>"3"</p>
-            </div>
-            <div>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-        </div>
-        <div class="recommendation">
-            <div>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-            </div>
-            <div>
-                <p>"4"</p>
-            </div>
-            <div>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-        </div>
+    <section class="recommendation-section">
+        <div class="recommendation-container">
+        <button class="nav-button" id="prevBtn">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <div id="recommendationCards"></div>
+        <button class="nav-button" id="nextBtn">
+            <i class="fas fa-chevron-right"></i>
+        </button>
     </div>
+
+    <template id="recommendationTemplate">
+        <div class="recommendation">
+            <div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+            </div>
+            <div>
+                <p></p>
+            </div>
+            <div class="stars"></div>
+        </div>
+    </template>
+    </section>
     
     <!--/ Recommendations -->
     
@@ -505,5 +466,103 @@ Copyright &copy2024 All rights reserved | This template is made with <i class="f
     <script src="js/plugins.js"></script>
     <script src="js/gijgo.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        const recommendations = [
+            {
+                text: "This is an amazing service! Highly recommended to everyone looking for quality and professionalism.",
+                stars: 5
+            },
+            {
+                text: "Excellent service and support. I am very satisfied with the results.",
+                stars: 5
+            },
+            {
+                text: "The team was very professional and delivered great results. Highly recommend!",
+                stars: 5
+            },
+            {
+                text: "Outstanding experience from start to finish. The best I've worked with!",
+                stars: 5
+            }
+        ];
+
+        const recommendationCards = document.getElementById('recommendationCards');
+        const template = document.getElementById('recommendationTemplate');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+        let intervalId;
+
+        function createRecommendations() {
+            recommendations.forEach((rec, index) => {
+                const content = template.content.cloneNode(true);
+                const card = content.querySelector('.recommendation');
+                
+                card.querySelector('p').textContent = rec.text;
+                
+                const starsContainer = card.querySelector('.stars');
+                for (let i = 0; i < rec.stars; i++) {
+                    const star = document.createElement('i');
+                    star.className = 'fa fa-star';
+                    star.setAttribute('aria-hidden', 'true');
+                    starsContainer.appendChild(star);
+                }
+
+                if (index === 0) card.classList.add('active');
+                recommendationCards.appendChild(card);
+            });
+        }
+
+        function showRecommendation(index) {
+            const cards = recommendationCards.querySelectorAll('.recommendation');
+            cards.forEach((card, i) => {
+                if (i === index) {
+                    card.classList.add('active');
+                } else {
+                    card.classList.remove('active');
+                }
+            });
+        }
+
+        function nextRecommendation() {
+            currentIndex = (currentIndex + 1) % recommendations.length;
+            showRecommendation(currentIndex);
+        }
+
+        function prevRecommendation() {
+            currentIndex = (currentIndex - 1 + recommendations.length) % recommendations.length;
+            showRecommendation(currentIndex);
+        }
+
+        function startAutoSwitch() {
+            intervalId = setInterval(nextRecommendation, 5000); // Switch every 5 seconds
+        }
+
+        function stopAutoSwitch() {
+            clearInterval(intervalId);
+        }
+
+        prevBtn.addEventListener('click', () => {
+            prevRecommendation();
+            stopAutoSwitch();
+            startAutoSwitch();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            nextRecommendation();
+            stopAutoSwitch();
+            startAutoSwitch();
+        });
+
+        // Create all recommendation cards
+        createRecommendations();
+
+        // Start auto-switching
+        startAutoSwitch();
+
+        // Pause auto-switching when hovering over the recommendations
+        recommendationCards.addEventListener('mouseenter', stopAutoSwitch);
+        recommendationCards.addEventListener('mouseleave', startAutoSwitch);
+    </script>
 </body>
 </html>

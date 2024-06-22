@@ -2095,7 +2095,7 @@ h3 {
 /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .about_me {
   padding-top: 75px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   position: relative;
 }
 
@@ -6888,14 +6888,85 @@ h6 {
   word-wrap: break-word; 
 }
 
-/* Default state: hide the button */
 .call-link {
   display: none !important;
 }
 
-/* Media query for mobile devices */
 @media (max-width: 768px) {
   .call-link {
       display: inline-block !important; /* or display: block; depending on your layout */
   }
+}
+
+.recommendation-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 60px auto;
+  position: relative;
+  max-width: 80%;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .recommendation-container {
+      max-width: none;
+  }
+}
+
+.recommendation {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  pointer-events: none;
+  border: 1px solid #ddd;
+}
+.recommendation.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.fa-quote-left {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 10px;
+}
+.recommendation p {
+  margin: 15px 0;
+  color: #333;
+  direction: rtl;
+  height: 100px;
+  overflow-y: scroll;
+}
+.recommendation .fa-star {
+  color: #f39c12;
+  font-size: 18px;
+}
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #888;
+  padding: 10px;
+  transition: color 0.3s ease;
+  z-index: 10;
+}
+.nav-button:hover {
+  color: #555;
+}
+#prevBtn {
+  left: 0;
+}
+#nextBtn {
+  right: 0;
 }

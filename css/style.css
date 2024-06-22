@@ -1490,7 +1490,7 @@ h3 {
 @media (max-width: 767px) {
   /* line 74, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
   .slider_area .single_slider::before {
-    width: 314px;
+    width: 308px;
     height: 300px;
     content: '';
     background-size: cover;

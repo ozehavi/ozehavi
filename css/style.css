@@ -2095,7 +2095,7 @@ h3 {
 /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .about_me {
   padding-top: 75px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   position: relative;
 }
 
@@ -6905,7 +6905,7 @@ h6 {
   text-align: center;
   margin: 40px auto;
   position: relative;
-  max-width: 600px;
+  max-width: 80%;
   height: 200px;
 }
 .recommendation {
@@ -6937,6 +6937,7 @@ h6 {
   font-size: 18px;
   color: #333;
   line-height: 1.5;
+  direction: rtl;
 }
 .recommendation .fa-star {
   color: #f39c12;

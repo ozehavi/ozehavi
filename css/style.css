@@ -6943,6 +6943,7 @@ h6 {
   direction: rtl;
   height: 100px;
   overflow-y: scroll;
+  align-content: center;
 }
 .recommendation .fa-star {
   color: #f39c12;

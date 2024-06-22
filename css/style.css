@@ -6888,12 +6888,10 @@ h6 {
   word-wrap: break-word; 
 }
 
-/* Default state: hide the button */
 .call-link {
   display: none !important;
 }
 
-/* Media query for mobile devices */
 @media (max-width: 768px) {
   .call-link {
       display: inline-block !important; /* or display: block; depending on your layout */
@@ -6903,11 +6901,18 @@ h6 {
 .recommendation-container {
   font-family: Arial, sans-serif;
   text-align: center;
-  margin: 40px auto;
+  margin: 60px auto;
   position: relative;
   max-width: 80%;
   height: 200px;
 }
+
+@media (max-width: 768px) {
+  .recommendation-container {
+      max-width: none;
+  }
+}
+
 .recommendation {
   background-color: #fff;
   border-radius: 8px;
@@ -6934,10 +6939,10 @@ h6 {
 }
 .recommendation p {
   margin: 15px 0;
-  font-size: 18px;
   color: #333;
-  line-height: 1.5;
   direction: rtl;
+  max-height: 100px;
+  overflow-y: scroll;
 }
 .recommendation .fa-star {
   color: #f39c12;

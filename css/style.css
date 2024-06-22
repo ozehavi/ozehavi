@@ -6924,9 +6924,10 @@ h6 {
   left: 0;
   right: 0;
   opacity: 0;
-  transition: opacity 1.5s ease-in-out;
+  /* transition: opacity 1.5s ease-in-out; */
   pointer-events: none;
   border: 1px solid #ddd;
+  
 }
 .recommendation.active {
   opacity: 1;
@@ -6942,8 +6943,9 @@ h6 {
   color: #333;
   direction: rtl;
   height: 100px;
-  overflow-y: scroll;
+  overflow-y: auto;
   align-content: center;
+  padding: 15px;
 }
 .recommendation .fa-star {
   color: #f39c12;
@@ -6959,7 +6961,7 @@ h6 {
   border: none;
   color: #888;
   padding: 10px;
-  transition: color 0.3s ease;
+  transition: color 0.1s ease;
   z-index: 10;
 }
 .nav-button:hover {

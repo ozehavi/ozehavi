@@ -11,13 +11,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Disable smooth scrolling on mobile devices */
-@media (max-width: 768px) {
-  html {
-      scroll-behavior: auto;
-  }
-}
-
 body {
   font-family: "Muli", sans-serif;
   font-weight: normal;
@@ -1099,7 +1092,7 @@ h3 {
 /* line 157, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a {
   color: #fff;
-  font-size: 15px;
+  font-size: 20px;
   text-transform: capitalize;
   font-weight: 400;
   display: inline-block;
@@ -1109,17 +1102,24 @@ h3 {
   text-transform: capitalize;
 }
 
+@media (min-width: 992px)  {
+  .header-area .main-header-area .main-menu ul li a {
+    font-size: 20px;
+  }
+}
+
+
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 157, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
   .header-area .main-header-area .main-menu ul li a {
-    font-size: 15px;
+    /* font-size: 15px; */
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
   /* line 157, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
   .header-area .main-header-area .main-menu ul li a {
-    font-size: 15px;
+    /* font-size: 15px; */
   }
 }
 

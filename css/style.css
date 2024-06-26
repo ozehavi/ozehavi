@@ -1091,7 +1091,7 @@ h3 {
 
 .header-area .main-header-area .main-menu ul li a {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: capitalize;
   font-weight: 400;
   display: inline-block;
@@ -1343,8 +1343,11 @@ h3 {
 .slider_bg_1 {
   /* background-image: url(../img/banner/banner.jpg); */
   background-image: url(../img/banner/cover.png);
+  /* background-image: url(../img/banner/t.png);
+  background-position: unset; */
   opacity: 0.8;
 }
+
 
 /* line 4, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
 .slider_bg_2 {
@@ -1361,7 +1364,17 @@ h3 {
   background-position: center center;
 }
 
-/* line 16, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+@media (max-width: 767px) {
+  .slider_bg_1 {
+    background-image: url(../img/banner/mobile_cover.png);
+    opacity: 0.8;
+  }
+  
+  .slider_area .single_slider {
+    background-position: unset;
+  }
+}
+
 .slider_area .single_slider .shap_pattern {
   position: absolute;
   right: 20%;
@@ -1454,41 +1467,30 @@ h3 {
   margin-bottom: 0;
 }
 
-/* line 74, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .slider_area .single_slider::before {
+      width: 206px;
+      height: 200px;
+      content: '';
+      background-size: cover;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+} */
 .slider_area .single_slider::before {
   position: absolute;
-  top: 600px;
-  /* background-image: url(../img/banner/maya.png); */
+  top: 140px;
   background-image: url(../img/logos/white_icon.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 500px;
-  height: 400px;
+  width: 205px;
+  height: 200px;
   content: '';
   opacity: 0.7;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-@media (max-width: 767px) {
-  /* line 74, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
-  .slider_area .single_slider::before {
-    width: 306px;
-    height: 300px;
-    content: '';
-    background-size: cover;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  /* line 74, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
-  .slider_area .single_slider::before {
-    width: 370px;
-    height: 370px;
-    content: '';
-    background-size: cover;
-  }
-}
-
-/* line 96, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
 .slider_area .single_slider::after {
   position: absolute;
   top: 0;

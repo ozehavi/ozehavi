@@ -1479,7 +1479,7 @@ h3 {
 } */
 .slider_area .single_slider::before {
   position: absolute;
-  top: 140px;
+  top: 110px;
   background-image: url(../img/logos/white_icon.png);
   background-size: cover;
   background-repeat: no-repeat;

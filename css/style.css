@@ -2088,6 +2088,12 @@ h3 {
   margin-top: 20px;
 }
 
+@media (max-width: 767px) {
+  .about_me .about_e_details p{
+    font-size: 18px;
+  }
+}
+
 .about_e_details{
   direction: rtl;
   text-align: right;
@@ -2101,7 +2107,6 @@ h3 {
   .about_me .about_img {
     padding-top: 20px;
   }
-  
 }
 
 .about_me .about_img .color_pattern {

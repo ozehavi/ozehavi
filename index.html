@@ -245,25 +245,48 @@
             'img/portfolio/4.png',
             'img/portfolio/5.png'
         ];
-
+    
         let currentIdx = 0;
         const imgElement = document.querySelector('.carousel img');
-
+    
         const updateImage = () => {
             imgElement.src = images[currentIdx];
         }
-
+    
         document.querySelector('.prev').addEventListener('click', () => {
             currentIdx = (currentIdx === 0) ? images.length - 1 : currentIdx - 1;
             updateImage();
         });
-
+    
         document.querySelector('.next').addEventListener('click', () => {
             currentIdx = (currentIdx === images.length - 1) ? 0 : currentIdx + 1;
             updateImage();
         });
-
+    
+        // Add touch event listeners for swiping
+        let touchStartX = 0;
+        let touchEndX = 0;
+    
+        const handleGesture = () => {
+            if (touchEndX < touchStartX) {
+                currentIdx = (currentIdx === images.length - 1) ? 0 : currentIdx + 1;
+            }
+            if (touchEndX > touchStartX) {
+                currentIdx = (currentIdx === 0) ? images.length - 1 : currentIdx - 1;
+            }
+            updateImage();
+        }
+    
+        imgElement.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+    
+        imgElement.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleGesture();
+        });
     </script>
+    
 
     <!--/ gallery -->   
     
@@ -500,7 +523,7 @@ Copyright &copy2024 All rights reserved | This template is made with <i class="f
         }
 
         function startAutoSwitch() {
-            intervalId = setInterval(nextRecommendation, 5000); // Switch every 5 seconds
+            intervalId = setInterval(nextRecommendation, 10000); // Switch every 10 seconds
         }
 
         function stopAutoSwitch() {
@@ -519,10 +542,7 @@ Copyright &copy2024 All rights reserved | This template is made with <i class="f
             startAutoSwitch();
         });
 
-        // Create all recommendation cards
         createRecommendations();
-
-        // Start auto-switching
         startAutoSwitch();
 
         // Pause auto-switching when hovering over the recommendations

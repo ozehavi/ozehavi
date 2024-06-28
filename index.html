@@ -263,10 +263,6 @@
             updateImage();
         });
 
-        setInterval(() => {
-            currentIdx = (currentIdx === images.length - 1) ? 0 : currentIdx + 1;
-            updateImage();
-        }, 5000);
     </script>
 
     <!--/ gallery -->   
@@ -305,7 +301,10 @@
 
 
     <!-- Recommendations -->
-
+    <div class="recommendation-title text-center">                        
+        <span></span>
+        <h3>מטופלים מספרים</h3>
+    </div>
     <section class="recommendation-section">
         <div class="recommendation-container">
         <button class="nav-button" id="prevBtn">

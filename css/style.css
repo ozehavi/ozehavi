@@ -395,9 +395,7 @@ h3 {
   width: 220px;
 }
 
-/* line 29, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_btn.scss */
 .boxed-btn3 {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
   background: #43a3d0;
   color: #fff;
   display: inline-block;
@@ -638,7 +636,6 @@ h3 {
   color: #fff;
 }
 
-/* line 3, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_section_title.scss */
 .section_title span {
   position: relative;
   z-index: 3;
@@ -652,7 +649,6 @@ h3 {
   padding-top: 14px;
 }
 
-/* line 14, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_section_title.scss */
 .section_title span:before {
   position: absolute;
   height: 60px;
@@ -1723,13 +1719,11 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  /* line 32, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info2 {
     margin-bottom: 30px;
   }
 }
 
-/* line 36, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
 .features_area .features_info2 h3 {
   font-size: 46px;
   line-height: 60px;
@@ -1738,7 +1732,6 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  /* line 36, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info2 h3 {
     font-size: 30px;
     line-height: 40px;
@@ -1746,7 +1739,6 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 36, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info2 h3 {
     font-size: 35px;
     line-height: 45px;
@@ -1754,14 +1746,12 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  /* line 36, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info2 h3 {
     font-size: 30px;
     line-height: 40px;
   }
 }
 
-/* line 54, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
 .features_area .features_info2 p {
   font-size: 16px;
   line-height: 28px;
@@ -1773,19 +1763,16 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  /* line 62, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info2 p br {
     display: none;
   }
 }
 
-/* line 69, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
 .features_area .features_info {
   padding-left: 68px;
 }
 
 @media (max-width: 767px) {
-  /* line 69, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1795,7 +1782,6 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 69, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info {
     padding-left: 30px;
     padding-top: 100px;
@@ -1804,7 +1790,6 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  /* line 69, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info {
     padding-left: 30px;
     padding-top: 0;
@@ -1813,14 +1798,12 @@ h3 {
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
-  /* line 69, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info {
     padding-left: 30px;
     padding-top: 0;
   }
 }
 
-/* line 93, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
 .features_area .features_info h3 {
   font-size: 46px;
   line-height: 60px;
@@ -1829,7 +1812,6 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  /* line 93, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info h3 {
     font-size: 30px;
     line-height: 40px;
@@ -1837,7 +1819,6 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 93, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info h3 {
     font-size: 38px;
     line-height: 50px;
@@ -1845,7 +1826,6 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  /* line 93, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info h3 {
     font-size: 30px;
     line-height: 40px;
@@ -1853,7 +1833,6 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  /* line 110, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info h3 br {
     display: none;
   }
@@ -2079,6 +2058,12 @@ h3 {
   font-size: 50px;
   font-weight: 700;
   color: #001D38;
+}
+
+@media (max-width: 767px) {
+  .about_me .about_e_details h3 {
+    padding-top: 15px;
+  }
 }
 
 .about_me .about_e_details p {
@@ -6467,14 +6452,12 @@ h6 {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 119, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card h5 {
     margin-bottom: 10px;
     font-size: 18px;
   }
 }
 
-/* line 140, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
 .blog_part .single-home-blog .card h5:hover {
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -6484,7 +6467,6 @@ h6 {
   -webkit-animation: 1s;
 }
 
-/* line 150, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
 .blog_part .single-home-blog .card ul li {
   display: inline-block;
   color: #8a8a8a;
@@ -6492,34 +6474,29 @@ h6 {
 }
 
 @media (max-width: 576px) {
-  /* line 150, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card ul li {
     margin-right: 10px;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 150, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card ul li {
     margin-right: 10px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 150, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card ul li {
     margin-right: 10px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 150, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card ul li {
     margin-right: 10px;
   }
 }
 
-/* line 166, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
 .blog_part .single-home-blog .card ul li span {
   margin-right: 10px;
   font-size: 12px;
@@ -6624,7 +6601,7 @@ h6 {
 .recommendation-container {
   font-family: Arial, sans-serif;
   text-align: center;
-  margin: 60px auto;
+  margin: 10px auto 60px auto;
   position: relative;
   max-width: 80%;
   height: 200px;
@@ -6754,4 +6731,48 @@ h6 {
   .carousel .next {
       right: 5px;
   }
+}
+
+.recommendation-title{
+  padding-top: 60px;
+}
+
+.recommendation-title h3 {
+  font-size: 50px;
+  line-height: 62px;
+  font-weight: 700;
+  color: #001D38;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .recommendation-title h3 {
+      font-size: 30px;
+      line-height: 36px;
+  }
+}
+
+.recommendation-title span {
+  position: relative;
+  z-index: 3;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #001D38;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  display: block;
+  padding-top: 14px;
+}
+
+.recommendation-title span:before {
+  position: absolute;
+  height: 60px;
+  width: 1px;
+  background: #43a3d0;
+  content: '';
+  left: 50%;
+  bottom: 100%;
 }

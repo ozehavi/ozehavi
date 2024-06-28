@@ -7,7 +7,7 @@
 /* 1. Theme default css */
 @import url("https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900&display=swap");
 /* line 5, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -128,60 +128,50 @@ label {
   text-shadow: none;
 }
 
-/* line 89, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 *::-webkit-input-placeholder {
   color: #cccccc;
   font-size: 14px;
   opacity: 1;
 }
 
-/* line 94, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 *:-ms-input-placeholder {
   color: #cccccc;
   font-size: 14px;
   opacity: 1;
 }
 
-/* line 99, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 *::-ms-input-placeholder {
   color: #cccccc;
   font-size: 14px;
   opacity: 1;
 }
 
-/* line 104, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 *::placeholder {
   color: #cccccc;
   font-size: 14px;
   opacity: 1;
 }
 
-/* line 110, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 h3 {
   font-size: 24px;
 }
 
-/* line 114, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 .mb-65 {
-  margin-bottom: 67px;
+  margin-bottom: 40px;
 }
 
-/* line 118, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 .black-bg {
   background: #020c26 !important;
 }
 
-/* line 122, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 .white-bg {
   background: #ffffff;
 }
 
-/* line 125, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 .gray-bg {
   background: #f5f5f5;
 }
 
-/* line 130, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 .bg-img-1 {
   background-image: url(../img/slider/slider-img-1.jpg);
 }
@@ -419,7 +409,7 @@ h3 {
   border: 1px solid transparent;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
-  border-radius: 0px;
+  border-radius: 30px;
   text-align: center;
   text-transform: capitalize;
   -webkit-transition: 0.5s;
@@ -1057,7 +1047,7 @@ h3 {
   color: #fff;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
-  border-radius: 0px;
+  border-radius: 30px;
   font-family: cursive;
 }
 
@@ -1089,10 +1079,9 @@ h3 {
   margin: 0 10px;
 }
 
-/* line 157, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a {
   color: #fff;
-  font-size: 15px;
+  font-size: 18px;
   text-transform: capitalize;
   font-weight: 400;
   display: inline-block;
@@ -1100,20 +1089,6 @@ h3 {
   font-family: "Muli", sans-serif;
   position: relative;
   text-transform: capitalize;
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  /* line 157, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
-  .header-area .main-header-area .main-menu ul li a {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1500px) {
-  /* line 157, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
-  .header-area .main-header-area .main-menu ul li a {
-    font-size: 15px;
-  }
 }
 
 /* line 176, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
@@ -1356,8 +1331,13 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(../img/banner/banner.jpg);
+  /* background-image: url(../img/banner/banner.jpg); */
+  background-image: url(../img/banner/cover.png);
+  /* background-image: url(../img/banner/t.png);
+  background-position: unset; */
+  opacity: 0.8;
 }
+
 
 /* line 4, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
 .slider_bg_2 {
@@ -1374,7 +1354,17 @@ h3 {
   background-position: center center;
 }
 
-/* line 16, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+@media (max-width: 767px) {
+  .slider_bg_1 {
+    background-image: url(../img/banner/mobile_cover.png);
+    opacity: 0.8;
+  }
+  
+  .slider_area .single_slider {
+    background-position: unset;
+  }
+}
+
 .slider_area .single_slider .shap_pattern {
   position: absolute;
   right: 20%;
@@ -1419,7 +1409,7 @@ h3 {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   color: #fff;
   font-size: 15px;
   position: relative;
@@ -1427,16 +1417,12 @@ h3 {
   overflow: hidden;
 }
 
-/* line 47, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+.slider_area .single_slider .social_links li a:hover {
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
 .slider_area .single_slider .social_links li a::before {
-  background: #89cbe8; /* A lighter blue color derived from #43a3d0 */
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #89cbe8 0%, #43a3d0 100%); /* Gradient from lighter blue to #43a3d0 */
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #89cbe8 0%, #43a3d0 100%); /* Gradient from lighter blue to #43a3d0 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #89cbe8 0%, #43a3d0 100%); /* Gradient from lighter blue to #43a3d0 */
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #1c92c9;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89cbe8', endColorstr='#43a3d0', GradientType=0); /* IE6-9 */
   position: absolute;
   left: 0;
@@ -1471,40 +1457,30 @@ h3 {
   margin-bottom: 0;
 }
 
-/* line 74, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .slider_area .single_slider::before {
+      width: 206px;
+      height: 200px;
+      content: '';
+      background-size: cover;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+} */
 .slider_area .single_slider::before {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  /* background-image: url(../img/banner/maya.png); */
-  width: 720px;
-  height: 723px;
-  content: '';
+  top: 110px;
+  background-image: url(../img/logos/white_icon.png);
+  background-size: cover;
   background-repeat: no-repeat;
+  width: 205px;
+  height: 200px;
+  content: '';
   opacity: 0.7;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-@media (max-width: 767px) {
-  /* line 74, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
-  .slider_area .single_slider::before {
-    width: 314px;
-    height: 300px;
-    content: '';
-    background-size: cover;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  /* line 74, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
-  .slider_area .single_slider::before {
-    width: 370px;
-    height: 370px;
-    content: '';
-    background-size: cover;
-  }
-}
-
-/* line 96, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
 .slider_area .single_slider::after {
   position: absolute;
   top: 0;
@@ -1884,20 +1860,17 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 110, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info h3 br {
     display: none;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  /* line 110, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info h3 br {
     display: none;
   }
 }
 
-/* line 122, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
 .features_area .features_info p {
   font-size: 16px;
   line-height: 28px;
@@ -1907,25 +1880,21 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  /* line 128, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info p br {
     display: none;
   }
 }
 
-/* line 134, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
 .features_area .features_info ul {
   margin-bottom: 56px;
 }
 
 @media (max-width: 767px) {
-  /* line 134, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .features_area .features_info ul {
     margin-bottom: 30px;
   }
 }
 
-/* line 139, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
 .features_area .features_info ul li {
   font-size: 16px;
   line-height: 28px;
@@ -1937,7 +1906,6 @@ h3 {
   z-index: 1;
 }
 
-/* line 148, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
 .features_area .features_info ul li::before {
   position: absolute;
   left: 0;
@@ -1952,12 +1920,10 @@ h3 {
   transform: translateY(-50%);
 }
 
-/* line 160, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
 .features_area .features_info .boxed-btn3 {
   padding: 13px 46px 14px 46px;
 }
 
-/* line 168, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
 .productivity_area {
   background-image: url(../img/banner/product.png);
   background-size: cover;
@@ -1967,13 +1933,11 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  /* line 168, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .productivity_area {
     padding: 100px 0;
   }
 }
 
-/* line 177, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
 .productivity_area h3 {
   font-size: 46px;
   font-weight: 300;
@@ -1982,7 +1946,6 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  /* line 177, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .productivity_area h3 {
     font-size: 30px;
     line-height: 35px;
@@ -1992,58 +1955,49 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 177, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .productivity_area h3 {
     margin-bottom: 30px;
   }
 }
 
-/* line 192, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
 .productivity_area .app_download {
   text-align: right;
 }
 
 @media (max-width: 767px) {
-  /* line 192, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .productivity_area .app_download {
     text-align: center;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 192, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .productivity_area .app_download {
     text-align: center;
   }
 }
 
-/* line 200, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
 .productivity_area .app_download img {
   margin-left: 9px;
 }
 
 @media (max-width: 767px) {
-  /* line 200, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_features.scss */
   .productivity_area .app_download img {
     margin: 5px 0;
   }
 }
 
-/* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_counter.scss */
 .counter_area {
   padding-bottom: 120px;
   padding-top: 75px;
 }
 
 @media (max-width: 767px) {
-  /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_counter.scss */
   .counter_area {
     padding-bottom: 30px;
     padding-top: 60px;
   }
 }
 
-/* line 8, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_counter.scss */
 .counter_area .single_counter {
   border: 1px solid #E8E8E8;
   padding: 50px 0 43px 0;
@@ -2054,12 +2008,10 @@ h3 {
   transition: 0.3s;
 }
 
-/* line 13, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_counter.scss */
 .counter_area .single_counter h3 {
   margin-bottom: 16px;
 }
 
-/* line 15, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_counter.scss */
 .counter_area .single_counter h3 span {
   color: #615CFD;
   font-size: 50px;
@@ -2067,19 +2019,16 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  /* line 15, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_counter.scss */
   .counter_area .single_counter h3 span {
     font-size: 35px;
   }
 }
 
-/* line 22, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_counter.scss */
 .counter_area .single_counter h3 span span {
   position: relative;
   top: -2px;
 }
 
-/* line 29, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_counter.scss */
 .counter_area .single_counter p {
   font-size: 15px;
   color: #001D38;
@@ -2087,12 +2036,10 @@ h3 {
   margin-bottom: 0;
 }
 
-/* line 35, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_counter.scss */
 .counter_area .single_counter:hover {
   border: 1px solid #615CFD;
 }
 
-/* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .about_me {
   padding-top: 75px;
   padding-bottom: 50px;
@@ -2100,7 +2047,6 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
   .about_me {
     padding-top: 0;
     padding-bottom: 0;
@@ -2108,13 +2054,11 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
   .about_me {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 }
 
-/* line 12, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .about_me .about_large_title {
   font-weight: 800;
   color: #F5F6F7;
@@ -2126,20 +2070,17 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  /* line 21, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
   .about_me .about_e_details {
     margin-bottom: 30px;
   }
 }
 
-/* line 25, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .about_me .about_e_details h3 {
   font-size: 50px;
   font-weight: 700;
   color: #001D38;
 }
 
-/* line 30, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .about_me .about_e_details p {
   font-size: 15px;
   font-weight: 400;
@@ -2147,17 +2088,27 @@ h3 {
   margin-top: 20px;
 }
 
+@media (max-width: 767px) {
+  .about_me .about_e_details p{
+    font-size: 18px;
+  }
+}
+
 .about_e_details{
   direction: rtl;
   text-align: right;
 }
 
-/* line 43, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .about_me .about_img {
   position: relative;
 }
 
-/* line 45, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
+@media (max-width: 767px) {
+  .about_me .about_img {
+    padding-top: 20px;
+  }
+}
+
 .about_me .about_img .color_pattern {
   position: absolute;
   right: -80px;
@@ -2166,55 +2117,48 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  /* line 45, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
   .about_me .about_img .color_pattern {
     right: 0;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
-  /* line 45, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
   .about_me .about_img .color_pattern {
     right: 0;
   }
 }
 
-/* line 58, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .about_me .about_img .my_Pic img {
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* line 66, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .project_area {
   padding-bottom: 150px;
 }
 
 @media (max-width: 767px) {
-  /* line 66, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
   .project_area {
     padding-bottom: 50px;
   }
 }
 
-/* line 72, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .project_area .projects_thumb img {
   width: 100%;
 }
 
-/* line 76, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .project_area .projects_info {
   padding-left: 68px;
 }
 
 @media (max-width: 767px) {
-  /* line 76, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
   .project_area .projects_info {
     padding-left: 0;
     margin: 20px 0;
   }
 }
 
-/* line 82, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_about.scss */
 .project_area .projects_info h3 {
   font-size: 30px;
   font-weight: 700;
@@ -2433,6 +2377,7 @@ h3 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background: #001D38;
 }
 
 /* line 6, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_footer.scss */
@@ -2898,102 +2843,6 @@ h3 {
   transform: scale(1.2);
 }
 
-/* line 2, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_tesmonial.scss */
-.testimonial_area {
-  padding: 130px 0;
-  background-image: url(../img/testmonial/banner.png);
-  position: relative;
-  z-index: 0;
-  background-size: cover;
-  background-position: center center;
-}
-
-/* line 9, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_tesmonial.scss */
-.testimonial_area:before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#001d38+0,001d38+100&0+0,1+100 */
-  background: -moz-linear-gradient(left, rgba(0, 29, 56, 0) 0%, #001d38 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(0, 29, 56, 0) 0%, #001d38 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(0, 29, 56, 0) 0%, #001d38 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00001d38', endColorstr='#001d38',GradientType=1 );
-  /* IE6-9 */
-  left: 0;
-  top: 0;
-  z-index: -1;
-  content: '';
-}
-
-@media (max-width: 767px) {
-  /* line 2, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_tesmonial.scss */
-  .testimonial_area {
-    padding: 50px 0;
-  }
-}
-
-/* line 27, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_tesmonial.scss */
-.testimonial_area .single_testmonial p {
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  margin: 34px 0;
-}
-
-@media (min-width: 320px) and (max-width: 1500px) {
-  /* line 33, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_tesmonial.scss */
-  .testimonial_area .single_testmonial p br {
-    display: none;
-  }
-}
-
-/* line 41, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_tesmonial.scss */
-.testimonial_area .single_testmonial .testmonial_author .thumb {
-  width: 42px;
-  height: 42px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  margin: auto;
-  margin: auto auto 15px auto;
-}
-
-/* line 48, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_tesmonial.scss */
-.testimonial_area .single_testmonial .testmonial_author h3 {
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-/* line 54, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_tesmonial.scss */
-.testimonial_area .single_testmonial .testmonial_author span {
-  font-size: 13px;
-  font-weight: 400;
-  color: #fff;
-}
-
-/* line 61, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_tesmonial.scss */
-.testimonial_area .owl-carousel .owl-item img {
-  display: inline-block;
-  width: auto;
-}
-
-/* line 65, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_tesmonial.scss */
-.testimonial_area .owl-carousel .owl-nav div.owl-next {
-  left: auto;
-  right: 0;
-}
-
-/* line 69, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_tesmonial.scss */
-.testimonial_area .owl-carousel .owl-nav div {
-  left: 0;
-}
-
 /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_discuss.scss */
 .contact {
   background: #001D38;
@@ -3051,7 +2900,7 @@ h3 {
 /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_service.scss */
 .service_area {
   padding-top: 100px;
-  padding-bottom: 120px;
+  padding-bottom: 70px;
   font-family: cursive;
 }
 
@@ -3078,6 +2927,8 @@ h3 {
   -o-transition: 0.3s;
   transition: 0.3s;
   margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -3204,16 +3055,7 @@ h3 {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  padding-top: 180px;
-  padding-bottom: 340px;
   font-family: cursive;
-}
-
-@media (max-width: 767px) {
-  /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-  .portfolio_area {
-    padding-top: 60px;
-  }
 }
 
 /* line 13, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
@@ -3227,125 +3069,6 @@ h3 {
   content: '';
 }
 
-/* line 25, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-.portfolio_image_area {
-  padding-bottom: 75px;
-  position: relative;
-  margin-top: -295px;
-}
-
-/* line 29, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-.portfolio_image_area.dec_margin {
-  margin-top: 0;
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
-@media (max-width: 767px) {
-  /* line 29, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-  .portfolio_image_area.dec_margin {
-    padding: 50px 0;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  /* line 29, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-  .portfolio_image_area.dec_margin {
-    padding: 70px 0;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  /* line 29, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-  .portfolio_image_area.dec_margin {
-    padding: 100px 0;
-  }
-}
-
-/* line 43, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-.portfolio_image_area .single_Portfolio {
-  position: relative;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-
-/* line 47, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-.portfolio_image_area .single_Portfolio .portfolio_thumb {
-  height: 410px;
-}
-
-/* line 49, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-.portfolio_image_area .single_Portfolio .portfolio_thumb img {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 54, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-.portfolio_image_area .single_Portfolio .portfolio_hover {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background: rgba(67, 163, 208, 0.6);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  opacity: 0;
-  overflow: hidden;
-}
-
-/* line 66, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-.portfolio_image_area .single_Portfolio .portfolio_hover .title {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 74, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-.portfolio_image_area .single_Portfolio .portfolio_hover h3 {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-/* line 80, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-.portfolio_image_area .single_Portfolio:hover .portfolio_hover {
-  -webkit-transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  transform: translateX(0%);
-  opacity: 1;
-}
-
-/* line 85, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-.portfolio_image_area .more_portfolio {
-  margin-top: 60px;
-}
-
-/* line 88, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
-.portfolio_image_area .popup {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9;
-}
-
-/* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_experts.scss */
 .expert_doctors_area {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -6972,4 +6695,63 @@ h6 {
 }
 #nextBtn {
   right: 0;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 80vh; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.carousel {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+}
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.carousel .nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
+.carousel .prev {
+  left: -50px;
+}
+.carousel .next {
+  right: -50px;
+}
+.carousel .fa {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .carousel {
+      width: 100%;
+      height: 500px; /* Maintain height consistency */
+  }
+  .carousel img {
+      height: 100%;
+  }
+  .carousel .prev {
+      left: 5px;
+  }
+  .carousel .next {
+      right: 5px;
+  }
 }

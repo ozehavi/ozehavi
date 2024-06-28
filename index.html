@@ -25,8 +25,8 @@
 </head>
 <body>
     <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
 
     <!-- header-start -->
     <div id="top"></div>    
@@ -226,96 +226,51 @@
     </div>    
     <!--/ service_area  -->
     
-    <!-- portfolio_area -->
-    <div class="portfolio_area portfolio_bg_1"></div>
-    <!--/ portfolio_area -->
-
-    <!-- portfolio_image_area  -->
-    <div class="portfolio_image_area" id="gallery">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-md-5">
-                    <div class="single_Portfolio">
-                        <div class="portfolio_thumb">
-                            <picture>
-                                <source media="(max-width: 600px)" srcset="img/portfolio/1_source.png">
-                                <source media="(min-width: 601px)" srcset="img/portfolio/1.png">
-                                <img src="img/portfolio/2.png" alt="">
-                            </picture>
-                        </div>
-                        <a href="img/portfolio/1_source.png" class="popup popup-image"></a>
-                        <!-- <div class="portfolio_hover">
-                            <div class="title">
-                                <h3>Product Design</h3>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-xl-7 col-md-7">
-                    <div class="single_Portfolio">
-                        <div class="portfolio_thumb">
-                            <picture>
-                                <source media="(max-width: 600px)" srcset="img/portfolio/2_source.png">
-                                <source media="(min-width: 601px)" srcset="img/portfolio/2.png">
-                                <img src="img/portfolio/2.png" alt="">
-                            </picture>
-                        </div>
-                        <a href="img/portfolio/2_source.png" class="popup popup-image"></a>
-                        <!-- <div class="portfolio_hover">
-                            <div class="title">
-                                <h3>Product Design</h3>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_Portfolio">
-                        <div class="portfolio_thumb">
-                            <img src="img/portfolio/3.png" alt="">
-                        </div>
-                        <a href="img/portfolio/3.png" class="popup popup-image"></a>
-                        <!-- <div class="portfolio_hover">
-                            <div class="title">
-                                <h3>דיקור יבש/ מערבי</h3>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_Portfolio">
-                        <div class="portfolio_thumb">
-                            <picture>
-                                <source media="(max-width: 600px)" srcset="img/portfolio/4_source.png">
-                                <source media="(min-width: 601px)" srcset="img/portfolio/4.png">
-                                <img src="img/portfolio/4_source.png" alt="">
-                            </picture>
-                        </div>
-                        <a href="img/portfolio/4.png" class="popup popup-image"></a>
-                        <!-- <div class="portfolio_hover">
-                            <div class="title">
-                                <h3>טיפול בפציעות ספורט</h3>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-12 col-lg-4">
-                    <div class="single_Portfolio">
-                        <div class="portfolio_thumb">
-                            <img src="img/portfolio/5.png" alt="">
-                        </div>
-                        <a href="img/portfolio/5.png" class="popup popup-image"></a>
-                        <!-- <div class="portfolio_hover">
-                            <div class="title">
-                                <h3>Product Design</h3>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-            </div>        
+    <!-- gallery -->
+    <div class="portfolio_area portfolio_bg_1">
+        <div class="carousel-container">
+            <div class="carousel">
+                <button class="nav-button prev"><i class="fa fa-chevron-left"></i></button>
+                <img src="img/portfolio/3.png">
+                <button class="nav-button next"><i class="fa fa-chevron-right"></i></button>
+            </div>
         </div>
     </div>
-    <!--/ portfolio_image_area  -->
-   
+ 
+    <script>
+        const images = [
+            'img/portfolio/1.png',
+            'img/portfolio/2.png',
+            'img/portfolio/3.png',
+            'img/portfolio/4.png',
+            'img/portfolio/5.png'
+        ];
+
+        let currentIdx = 0;
+        const imgElement = document.querySelector('.carousel img');
+
+        const updateImage = () => {
+            imgElement.src = images[currentIdx];
+        }
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            currentIdx = (currentIdx === 0) ? images.length - 1 : currentIdx - 1;
+            updateImage();
+        });
+
+        document.querySelector('.next').addEventListener('click', () => {
+            currentIdx = (currentIdx === images.length - 1) ? 0 : currentIdx + 1;
+            updateImage();
+        });
+
+        setInterval(() => {
+            currentIdx = (currentIdx === images.length - 1) ? 0 : currentIdx + 1;
+            updateImage();
+        }, 5000);
+    </script>
+
+    <!--/ gallery -->   
+    
     <!-- about_me  -->
     <div class="about_me" id="about_me">
         <div class="about_large_title d-none d-lg-block">
@@ -420,7 +375,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-6">
                     <div class="contact_map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.962162244056!2d34.771329212632715!3d31.989041173894456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502b380abbb8743%3A0xb550aec94bbb1c53!2sMoshe%20Levi%20St%2011%2C%20Rishon%20LeTsiyon!5e0!3m2!1sen!2sil!4v1717245496168!5m2!1sen!2sil" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.962162244056!2d34.771329212632715!3d31.989041173894456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502b380abbb8743%3A0xb550aec94bbb1c53!2sMoshe%20Levi%20St%2011%2C%20Rishon%20LeTsiyon!5e0!3m2!1sen!2sil!4v1717245496168!5m2!1sen!2sil" width="400" height="300" style="border:0;border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>              
             </div>

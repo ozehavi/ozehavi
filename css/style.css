@@ -1048,7 +1048,7 @@ h3 {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 30px;
-  font-family: cursive;
+  font-family: system-ui;
 }
 
 
@@ -1575,7 +1575,7 @@ h3 {
 /* line 141, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
   color: #FFF;
-  font-family: cursive;
+  font-family: system-ui;
   font-size: 70px;
   text-transform: capitalize;
   font-weight: 700;
@@ -2889,19 +2889,19 @@ h3 {
 .contact .section_title h3{
   color: #fff;
   direction: rtl;
-  font-family: cursive;
+  font-family: system-ui;
 }
 
 .contact .section_title span{
   color: #fff;
-  font-family: cursive;
+  font-family: system-ui;
 }
 
 /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_service.scss */
 .service_area {
   padding-top: 100px;
   padding-bottom: 70px;
-  font-family: cursive;
+  font-family: system-ui;
 }
 
 @media (max-width: 767px) {
@@ -3055,7 +3055,7 @@ h3 {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  font-family: cursive;
+  font-family: system-ui;
 }
 
 /* line 13, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
@@ -6606,7 +6606,7 @@ h6 {
   transform: rotateY(180deg); 
   align-items: center;
   direction: rtl;
-  font-family: cursive;
+  font-family: system-ui;
   color: #001D38;
   word-wrap: break-word; 
 }

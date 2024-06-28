@@ -215,7 +215,7 @@
   font-weight: 400;
   color: #000;
   text-transform: capitalize;
-  font-family: cursive;
+  font-family: system-ui;
 }
 
 .slicknav_nav .slicknav_arrow {

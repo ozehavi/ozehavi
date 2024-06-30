@@ -11,11 +11,13 @@
             width: 100%;
             max-width: 600px;
             margin: auto;
+            touch-action: pan-y;
         }
 
         .carousel-inner {
             display: flex;
             transition: transform 0.5s ease;
+            -webkit-transition: -webkit-transform 0.5s ease;
             will-change: transform;
         }
 
@@ -76,64 +78,75 @@
     carouselInner.style.transform = 'translateX(-100%)';
 
     const updateImage = () => {
-        const offset = -(currentIdx + 1) * 100;
-        carouselInner.style.transition = 'transform 0.5s ease';
-        carouselInner.style.transform = `translateX(${offset}%)`;
+        requestAnimationFrame(() => {
+            const offset = -(currentIdx + 1) * 100;
+            carouselInner.style.transition = 'transform 0.5s ease';
+            carouselInner.style.transform = `translateX(${offset}%)`;
+        });
     };
 
     document.querySelector('.prev').addEventListener('click', (e) => {
         e.preventDefault();
-        currentIdx--;
+        currentIdx = (currentIdx - 1 + totalImages) % totalImages;
         updateImage();
     });
 
     document.querySelector('.next').addEventListener('click', (e) => {
         e.preventDefault();
-        currentIdx++;
+        currentIdx = (currentIdx + 1) % totalImages;
         updateImage();
     });
 
     carouselInner.addEventListener('transitionend', () => {
-        if (currentIdx >= totalImages) {
+        if (currentIdx === totalImages) {
             carouselInner.style.transition = 'none';
             currentIdx = 0;
             carouselInner.style.transform = 'translateX(-100%)';
-        } else if (currentIdx < 0) {
+        } else if (currentIdx === -1) {
             carouselInner.style.transition = 'none';
             currentIdx = totalImages - 1;
             carouselInner.style.transform = `translateX(-${totalImages * 100}%)`;
         }
         setTimeout(() => {
             carouselInner.style.transition = 'transform 0.5s ease';
-        });
+        }, 10);
     });
 
     let touchStartX = 0;
-    let touchMoveX = 0;
+    let touchEndX = 0;
+    let isDragging = false;
 
     carouselInner.addEventListener('touchstart', (e) => {
         touchStartX = e.touches[0].clientX;
+        isDragging = true;
         carouselInner.style.transition = 'none';
-    });
+    }, { passive: true });
 
     carouselInner.addEventListener('touchmove', (e) => {
-        touchMoveX = e.touches[0].clientX;
-        const moveOffset = (touchMoveX - touchStartX) / carouselInner.clientWidth * 100;
+        if (!isDragging) return;
+        touchEndX = e.touches[0].clientX;
+        const moveOffset = (touchEndX - touchStartX) / carouselInner.clientWidth * 100;
         const offset = -(currentIdx + 1) * 100 + moveOffset;
         carouselInner.style.transform = `translateX(${offset}%)`;
-    });
+    }, { passive: true });
 
-    carouselInner.addEventListener('touchend', (e) => {
-        const moveOffset = e.changedTouches[0].clientX - touchStartX;
+    carouselInner.addEventListener('touchend', () => {
+        isDragging = false;
+        const moveOffset = touchEndX - touchStartX;
         if (Math.abs(moveOffset) > carouselInner.clientWidth / 3) {
             if (moveOffset < 0) {
-                currentIdx++;
+                currentIdx = (currentIdx + 1) % totalImages;
             } else {
-                currentIdx--;
+                currentIdx = (currentIdx - 1 + totalImages) % totalImages;
             }
         }
         updateImage();
     });
+
+    // Prevent default scrolling on carousel
+    document.querySelector('.carousel').addEventListener('touchmove', (e) => {
+        e.preventDefault();
+    }, { passive: false });
 </script>
 
 </body>

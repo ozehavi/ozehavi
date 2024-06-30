@@ -5911,28 +5911,23 @@ h6 {
   }
 }
 
-/* line 1204, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
 .single-post-area .blog-author a {
   display: inline-block;
 }
 
-/* line 1208, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
 .single-post-area .blog-author a:hover {
   color: #615CFD;
 }
 
-/* line 1213, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
 .single-post-area .blog-author p {
   margin-bottom: 0;
   font-size: 15px;
 }
 
-/* line 1218, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
 .single-post-area .blog-author h4 {
   font-size: 16px;
 }
 
-/* line 1225, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
 .single-post-area .navigation-area {
   border-bottom: 1px solid #eee;
   padding-bottom: 30px;
@@ -6009,7 +6004,6 @@ h6 {
   transition: 0.5s;
 }
 
-/* line 1287, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
 .single-post-area .navigation-area .nav-right .lnr {
   margin-right: 20px;
   opacity: 0;
@@ -6017,24 +6011,20 @@ h6 {
   transition: 0.5s;
 }
 
-/* line 1294, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
 .single-post-area .navigation-area .nav-right:hover .lnr {
   opacity: 1;
 }
 
-/* line 1299, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
 .single-post-area .navigation-area .nav-right:hover .thumb img {
   opacity: .5;
 }
 
 @media (max-width: 991px) {
-  /* line 1307, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
   .single-post-area .sidebar-widgets {
     padding-bottom: 0px;
   }
 }
 
-/* line 1314, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
 .comments-area {
   background: transparent;
   border-top: 1px solid #eee;

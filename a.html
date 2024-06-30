@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Image Carousel with Seamless Swipe Effect</title>
     <style>
         .carousel {
             position: relative;
             overflow: hidden;
             width: 100%;
-            max-width: 600px; /* Adjust based on your needs */
+            max-width: 600px;
             margin: auto;
         }
 
@@ -48,13 +48,13 @@
 
 <div class="carousel">
     <div class="carousel-inner">
-        <img src="/img/portfolio/5.png" alt="Image 5"> <!-- Clone of last image -->
+        <img src="/img/portfolio/5.png" alt="Image 5">
         <img src="/img/portfolio/1.png" alt="Image 1">
         <img src="/img/portfolio/2.png" alt="Image 2">
         <img src="/img/portfolio/3.png" alt="Image 3">
         <img src="/img/portfolio/4.png" alt="Image 4">
         <img src="/img/portfolio/5.png" alt="Image 5">
-        <img src="/img/portfolio/1.png" alt="Image 1"> <!-- Clone of first image -->
+        <img src="/img/portfolio/1.png" alt="Image 1">
     </div>
     <button class="prev">Previous</button>
     <button class="next">Next</button>
@@ -73,7 +73,6 @@
     const carouselInner = document.querySelector('.carousel-inner');
     const totalImages = images.length;
 
-    // Set the initial position to show the first image correctly
     carouselInner.style.transform = 'translateX(-100%)';
 
     const updateImage = () => {
@@ -83,13 +82,13 @@
     }
 
     document.querySelector('.prev').addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent default behavior on button click
+        e.preventDefault();
         currentIdx--;
         updateImage();
     });
 
     document.querySelector('.next').addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent default behavior on button click
+        e.preventDefault();
         currentIdx++;
         updateImage();
     });
@@ -104,30 +103,28 @@
             currentIdx = totalImages - 1;
             carouselInner.style.transform = `translateX(-${totalImages * 100}%)`;
         }
-        // Re-enable transitions for normal swipes
         setTimeout(() => {
             carouselInner.style.transition = 'transform 0.5s ease';
         });
     });
 
-    // Add touch event listeners for swiping with dynamic effect
     let touchStartX = 0;
     let touchMoveX = 0;
 
     carouselInner.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
+        touchStartX = e.touches[0].clientX;
         carouselInner.style.transition = 'none';
     });
 
     carouselInner.addEventListener('touchmove', (e) => {
-        touchMoveX = e.changedTouches[0].screenX;
+        touchMoveX = e.touches[0].clientX;
         const moveOffset = (touchMoveX - touchStartX) / carouselInner.clientWidth * 100;
         const offset = -(currentIdx + 1) * 100 + moveOffset;
         carouselInner.style.transform = `translateX(${offset}%)`;
     });
 
     carouselInner.addEventListener('touchend', (e) => {
-        const moveOffset = e.changedTouches[0].screenX - touchStartX;
+        const moveOffset = e.changedTouches[0].clientX - touchStartX;
         if (Math.abs(moveOffset) > carouselInner.clientWidth / 3) {
             if (moveOffset < 0) {
                 currentIdx++;

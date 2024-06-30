@@ -3035,7 +3035,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_portfolio.scss */
 .portfolio_area {
-  background-image: url(../img/banner/portfolio_bg.png);
+  /* background-image: url(../img/banner/portfolio_bg.png); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -6224,274 +6224,6 @@ h6 {
   color: #777;
 }
 
-/*============ End Blog Single Styles  =============*/
-/**************** blog part css start ****************/
-/* line 2, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-.blog_part {
-  margin-bottom: 140px;
-}
-
-@media (max-width: 576px) {
-  /* line 2, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part {
-    margin-bottom: 0px;
-    padding: 0px 0px 70px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 2, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part {
-    margin-bottom: 0px;
-    padding: 0px 0px 70px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 2, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part {
-    margin-bottom: 0px;
-    padding: 0px 0px 70px;
-  }
-}
-
-/* line 19, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-.blog_part .blog_right_sidebar .widget_title {
-  font-size: 20px;
-  margin-bottom: 40px;
-  font-style: inherit !important;
-}
-
-@media (max-width: 576px) {
-  /* line 24, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part .single-home-blog {
-    margin-bottom: 140px;
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 24, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part .single-home-blog {
-    margin-bottom: 140px;
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 24, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part .single-home-blog {
-    margin-bottom: 140px;
-    margin-top: 20px;
-  }
-}
-
-/* line 40, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-.blog_part .single-home-blog .card-img-top {
-  border-radius: 0px;
-}
-
-/* line 43, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-.blog_part .single-home-blog .card {
-  border: 0px solid transparent;
-  border-radius: 0px;
-  background-color: transparent;
-  position: relative;
-}
-
-/* line 48, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-.blog_part .single-home-blog .card .card-body {
-  padding: 25px 10px 29px 40px;
-  background-color: #fff;
-  position: absolute;
-  left: 20px;
-  bottom: -140px;
-  box-shadow: -7.552px 9.326px 20px 0px rgba(1, 84, 85, 0.1);
-  border-radius: 10px;
-}
-
-@media (max-width: 576px) {
-  /* line 48, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part .single-home-blog .card .card-body {
-    padding: 15px;
-    left: 10px;
-    bottom: -140px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 48, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part .single-home-blog .card .card-body {
-    padding: 15px;
-    left: 10px;
-    bottom: -140px;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 48, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part .single-home-blog .card .card-body {
-    padding: 20px;
-  }
-}
-
-/* line 72, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-.blog_part .single-home-blog .card .card-body a {
-  color: #615CFD;
-  text-transform: uppercase;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-
-/* line 76, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-.blog_part .single-home-blog .card .card-body a:hover {
-  background: -webkit-linear-gradient(131deg, #ff7e5f 0%, #feb47b 99%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* line 83, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-.blog_part .single-home-blog .card .dot {
-  position: relative;
-  padding-left: 20px;
-}
-
-/* line 86, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-.blog_part .single-home-blog .card .dot:after {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 10px;
-  top: 5px;
-  left: 0;
-  background-color: #615CFD;
-  border-radius: 50%;
-}
-
-/* line 97, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-.blog_part .single-home-blog .card span {
-  color: #8a8a8a;
-  margin-bottom: 10px;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-@media (max-width: 576px) {
-  /* line 97, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part .single-home-blog .card span {
-    margin-bottom: 5px;
-    margin-top: 5px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 97, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part .single-home-blog .card span {
-    margin-bottom: 5px;
-    margin-top: 5px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 97, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part .single-home-blog .card span {
-    margin-bottom: 5px;
-    margin-top: 5px;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 97, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part .single-home-blog .card span {
-    margin-bottom: 5px;
-    margin-top: 5px;
-  }
-}
-
-/* line 119, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-.blog_part .single-home-blog .card h5 {
-  font-weight: 600;
-  line-height: 1.5;
-  font-size: 20px;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  text-transform: capitalize;
-  margin-bottom: 22px;
-}
-
-@media (max-width: 576px) {
-  /* line 119, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part .single-home-blog .card h5 {
-    margin-bottom: 10px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 119, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part .single-home-blog .card h5 {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 119, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog_part.scss */
-  .blog_part .single-home-blog .card h5 {
-    margin-bottom: 10px;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .blog_part .single-home-blog .card h5 {
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-}
-
-.blog_part .single-home-blog .card h5:hover {
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  background: -webkit-linear-gradient(131deg, #feb47b 0%, #ff7e5f 99%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: 1s;
-}
-
-.blog_part .single-home-blog .card ul li {
-  display: inline-block;
-  color: #8a8a8a;
-  margin-right: 14px;
-}
-
-@media (max-width: 576px) {
-  .blog_part .single-home-blog .card ul li {
-    margin-right: 10px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .blog_part .single-home-blog .card ul li {
-    margin-right: 10px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .blog_part .single-home-blog .card ul li {
-    margin-right: 10px;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .blog_part .single-home-blog .card ul li {
-    margin-right: 10px;
-  }
-}
-
-.blog_part .single-home-blog .card ul li span {
-  margin-right: 10px;
-  font-size: 12px;
-}
-
 .logo{
   font-size: 20px;
   letter-spacing: 2px;  
@@ -6664,62 +6396,101 @@ h6 {
   right: 0;
 }
 
-.carousel-container {
+.portfolio-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 80vh; */
   padding-top: 50px;
   padding-bottom: 50px;
-}
-.carousel {
+} 
+
+.portfolio {
   position: relative;
   width: 600px;
-  height: 500px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 500px;         
+  overflow: hidden;
   border-radius: 10px;
-  background-color: white;
 }
-.carousel img {
+.portfolio-inner {
+  display: flex;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.portfolio-item {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateZ(0); /* Force hardware acceleration */
 }
-.carousel .nav-button {
+
+.imageBtn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   font-size: 24px;
-  color: #333;
-  border: none;
-  cursor: pointer;
-}
-.carousel .prev {
-  left: -50px;
-}
-.carousel .next {
-  right: -50px;
-}
-.carousel .fa {
   color: white;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.imageBtn.prev {
+  left: 10px;
+}
+
+.imageBtn.next {
+  right: 10px;
+}
+
+.portfolio-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.indicator {
+  width: 30px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: white;
 }
 
 @media (max-width: 600px) {
-  .carousel {
+  .portfolio {
       width: 100%;
-      height: 500px; /* Maintain height consistency */
+      height: 500px;
   }
-  .carousel img {
-      height: 100%;
-  }
-  .carousel .prev {
+
+  .imageBtn.prev {
       left: 5px;
   }
-  .carousel .next {
+
+  .imageBtn.next {
       right: 5px;
+  }
+}
+
+@media (min-width: 601px) {
+  .portfolio {
+      touch-action: none;
   }
 }
 

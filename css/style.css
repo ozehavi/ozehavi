@@ -966,11 +966,11 @@ h3 {
 .slider_area .single_slider::before {
   position: absolute;
   top: 110px;
-  background-image: url(../img/logos/white_icon.png);
+  background-image: url(../img/logos/logo_white.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 205px;
-  height: 200px;
+  height: 205px;
   content: '';
   opacity: 0.7;
   left: 50%;

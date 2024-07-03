@@ -932,10 +932,6 @@ h3 {
   overflow: hidden;
   background-color: #ffffff2b;
 }
-.aaa {
-  background-color: #ffffff2b;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-}
 
 .slider_area .single_slider .social_links li a:hover {
   border: 1px solid rgba(255, 255, 255, 0);

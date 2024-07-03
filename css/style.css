@@ -926,10 +926,11 @@ h3 {
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.8);
   color: #fff;
-  font-size: 15px;
+  font-size: 20px;
   position: relative;
   z-index: 2;
   overflow: hidden;
+  background-color: #ffffff2b;
 }
 
 .slider_area .single_slider .social_links li a:hover {

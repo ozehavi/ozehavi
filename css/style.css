@@ -1396,24 +1396,6 @@ h3 {
   font-family: system-ui;
 }
 
-.service-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 43px 30px 40px 30px;
-  border: 1px solid #E8E8E8;
-  transition: 0.3s;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-}
-.service-card.expanded {
-  height: auto;
-}
 .service-card-icon {
   font-size: 48px;
   margin-bottom: 10px;
@@ -1451,7 +1433,6 @@ h3 {
   }
 }
 
-
 .service_area {
   padding-top: 100px;
   padding-bottom: 70px;
@@ -1473,16 +1454,14 @@ h3 {
 .service_area .single_service {
   padding: 48px 35px 45px 35px;
   border: 1px solid #E8E8E8;
-  /* -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-   */
   transition: 0.3s;
   margin-bottom: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   user-select: none;
-
+}
+.service_area .single_service.expanded {
+  height: auto;
 }
 .service_area .single_service:not(.expanded):hover {
   transform: translateY(-5px);

@@ -316,30 +316,20 @@ $(document).ready(function() {
   wow.init();
 });
 
-
-
-//------- Mailchimp js --------//  
-function mailChimp() {
-  $('#mc_embed_signup').find('form').ajaxChimp();
-}
-mailChimp();
-
-
-
-        // Search Toggle
-        $("#search_input_box").hide();
-        $("#search").on("click", function () {
-            $("#search_input_box").slideToggle();
-            $("#search_input").focus();
-        });
-        $("#close_search").on("click", function () {
-            $('#search_input_box').slideUp(500);
-        });
-        // Search Toggle
-        $("#search_input_box").hide();
-        $("#search_1").on("click", function () {
-            $("#search_input_box").slideToggle();
-            $("#search_input").focus();
-        });
+// Search Toggle
+$("#search_input_box").hide();
+$("#search").on("click", function () {
+    $("#search_input_box").slideToggle();
+    $("#search_input").focus();
+});
+$("#close_search").on("click", function () {
+    $('#search_input_box').slideUp(500);
+});
+// Search Toggle
+$("#search_input_box").hide();
+$("#search_1").on("click", function () {
+    $("#search_input_box").slideToggle();
+    $("#search_input").focus();
+});
 
 })(jQuery);	

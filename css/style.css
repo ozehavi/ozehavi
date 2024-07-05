@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: "Assistant", sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -56,7 +56,7 @@ button {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Muli", sans-serif;
+  font-family: "Assistant", sans-serif;
   color: #001D38;
 }
 
@@ -84,7 +84,7 @@ p {
   line-height: 23px;
   color: #4D4D4D;
   margin-bottom: 13px;
-  font-family: "Muli", sans-serif;
+  font-family: "Assistant", sans-serif;
 }
 
 label {
@@ -262,7 +262,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 14px 38px;
-  font-family: "Muli", sans-serif;
+  font-family: "Assistant", sans-serif;
   font-size: 14px;
   font-weight: 500;
   border: 0;
@@ -658,7 +658,7 @@ h3 {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 30px;
-  font-family: system-ui;
+  font-family: "Assistant", sans-serif;
 }
 
 
@@ -692,7 +692,7 @@ h3 {
   font-weight: 400;
   display: inline-block;
   padding: 0px 0px 0px 0px;
-  font-family: "Muli", sans-serif;
+  font-family: "Assistant", sans-serif;
   position: relative;
   text-transform: capitalize;
 }
@@ -980,7 +980,6 @@ h3 {
   width: 205px;
   height: 205px;
   content: '';
-  /* opacity: 0.7; */
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1064,7 +1063,7 @@ h3 {
 
 .slider_area .single_slider .slider_text h3 {
   color: #FFF;
-  font-family: system-ui;
+  font-family: "Assistant", sans-serif;
   font-size: 70px;
   text-transform: capitalize;
   font-weight: 700;
@@ -1394,7 +1393,7 @@ h3 {
 
 .contact .section_title span{
   color: #fff;
-  font-family: system-ui;
+  font-family: "Assistant", sans-serif;
 }
 
 .service-card-icon {
@@ -1437,7 +1436,7 @@ h3 {
 .service_area {
   padding-top: 100px;
   padding-bottom: 70px;
-  font-family: system-ui;
+  font-family: "Assistant", sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -1499,7 +1498,7 @@ h3 {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  font-family: system-ui;
+  font-family: "Assistant", sans-serif;
 }
 
 .portfolio_area:before {
@@ -1654,7 +1653,7 @@ h6 {
   transform: rotateY(180deg); 
   align-items: center;
   direction: rtl;
-  font-family: system-ui;
+  font-family: "Assistant", sans-serif;
   color: #001D38;
   word-wrap: break-word; 
 }
@@ -1670,7 +1669,7 @@ h6 {
 }
 
 .recommendation-container {
-  font-family: Arial, sans-serif;
+  font-family: "Assistant", sans-serif;
   text-align: center;
   margin: 10px auto 60px auto;
   position: relative;

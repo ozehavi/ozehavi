@@ -1408,20 +1408,20 @@ h3 {
   text-align: center;
   color: #2C2C2C;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
 }
 .service-card-description {
   display: none;
   margin-top: 10px;
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 17px;
   color: #666;
   text-align: center;
   direction: rtl;
 }
 .toggle-icon {
   align-self: center;
-  font-size: 24px;
+  font-size: 26px;
   margin-top: auto;
   color: #666;
   cursor: pointer;
@@ -1453,7 +1453,7 @@ h3 {
 }
 
 .service_area .single_service {
-  padding: 48px 35px 45px 35px;
+  padding: 38px 25px 35px 25px;
   border: 1px solid #E8E8E8;
   transition: 0.3s;
   margin-bottom: 30px;
@@ -1603,7 +1603,7 @@ h6 {
 }
 
 .single_service {
-  min-height: 250px;
+  min-height: 235px;
 }
 
 .contact_form_area{

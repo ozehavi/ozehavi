@@ -1760,7 +1760,7 @@ h6 {
   }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 991px) {
   .portfolio {
       touch-action: none;
   }

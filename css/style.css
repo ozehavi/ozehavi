@@ -1396,18 +1396,31 @@ h3 {
   font-family: "Assistant", sans-serif;
 }
 
-.service-card-icon {
-  font-size: 48px;
-  margin-bottom: 10px;
-  text-align: center;
+.service_area .row {
+  display: flex;
+  flex-wrap: wrap;
 }
-.service-card-title {
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align: center;
-  color: #2C2C2C;
-  font-weight: 600;
-  font-size: 20px;
+
+.service_area .col-xl-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.service_area .single_service {
+  padding: 38px 25px 35px 25px;
+  border: 1px solid #E8E8E8;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  user-select: none;
+  transition: height 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.service_area .single_service:not(.expanded) {
+  height: 220px;
 }
 
 .service-card-description {
@@ -1418,102 +1431,26 @@ h3 {
   color: #666;
   text-align: center;
   direction: rtl;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
-  opacity: 0;
-}
-
-.toggle-icon {
-  align-self: center;
-  font-size: 26px;
-  margin-top: auto;
-  color: #666;
-  cursor: pointer;
-}
-
-@media (max-width: 600px) {
-  .service-card {
-      width: calc(100% - 40px);
-      max-width: 100%;
-  }
-}
-
-.service_area {
-  padding-top: 100px;
-  padding-bottom: 70px;
-  font-family: "Assistant", sans-serif;
-}
-
-@media (max-width: 767px) {
-  .service_area {
-    padding-bottom: 30px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .service_area {
-    padding-bottom: 50px;
-  }
-}
-
-.service_area .single_service {
-  padding: 38px 25px 35px 25px;
-  border: 1px solid #E8E8E8;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  user-select: none;
-  transition: 0.3s, height 0.5s ease-out;
-  height: 220px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-.service_area .single_service.expanded {
-  height: 360px;
-}
-.service_area .single_service:not(.expanded):hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .service_area .single_service {
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    min-height: 250px;
-  }
-}
-
-@media (max-width: 991px) {
-  .service_area .single_service.expanded {
-    height: auto;
-  }
 }
 
 .service_area .single_service.expanded .service-card-description {
-  max-height: 200px; 
-  opacity: 1;
+  display: block;
 }
 
-.service_area .single_service h3 {
-  font-size: 24px;
-  font-weight: 600;
-  color: #2C2C2C;
-  margin-top: 24px;
-  padding-bottom: 12px;
+.service-card-icon,
+.service-card-title {
+  margin-bottom: 15px;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .service_area .single_service h3 {
-    font-size: 22px;
+.toggle-icon {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .service_area .single_service,
+  .service_area .single_service.expanded {
+    height: auto !important;
   }
-}
-
-.service_area .single_service:hover {
-  border: 1px solid #43a3d0;
 }
 
 .portfolio_area {

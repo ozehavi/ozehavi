@@ -1471,6 +1471,9 @@ h3 {
 @media (min-width: 768px) and (max-width: 991px) {
   .service_area .single_service {
     padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
   }
 }
 

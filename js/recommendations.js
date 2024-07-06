@@ -33,7 +33,6 @@ const template = document.getElementById('recommendationTemplate');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 let currentIndex = 0;
-let intervalId;
 
 function createRecommendations() {
     recommendations.forEach((rec, index) => {
@@ -76,14 +75,6 @@ function prevRecommendation() {
     showRecommendation(currentIndex);
 }
 
-function startAutoSwitch() {
-    intervalId = setInterval(nextRecommendation, 10000); // Switch every 10 seconds
-}
-
-function stopAutoSwitch() {
-    clearInterval(intervalId);
-}
-
 prevBtn.addEventListener('click', () => {
     prevRecommendation();
     stopAutoSwitch();
@@ -97,8 +88,3 @@ nextBtn.addEventListener('click', () => {
 });
 
 createRecommendations();
-startAutoSwitch();
-
-// Pause auto-switching when hovering over the recommendations
-recommendationCards.addEventListener('mouseenter', stopAutoSwitch);
-recommendationCards.addEventListener('mouseleave', startAutoSwitch);

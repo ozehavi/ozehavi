@@ -30,13 +30,14 @@ function adjustRowHeights() {
 
     const description = card.querySelector('.service-card-description');
     const toggleIcon = card.querySelector('.toggle-icon');
+    console.log("card.classList",card.classList)
     if (card.classList.contains('expanded')) {
         description.style.display = 'block';
-        toggleIcon.textContent = '-';
-    } else {
+        toggleIcon.style.backgroundImage = `url("img/icons/minus.png")`;
+      } else {
         description.style.display = 'none';
-        toggleIcon.textContent = '+';
-    }
+        toggleIcon.style.backgroundImage = `url("img/icons/plus.png")`;
+      }
 
     adjustRowHeights();
   }

@@ -1416,6 +1416,7 @@ h3 {
   transition: height 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
@@ -1440,10 +1441,21 @@ h3 {
 .service-card-icon,
 .service-card-title {
   margin-bottom: 15px;
+  text-align: center;
+  color: #2C2C2C;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .toggle-icon {
   margin-top: auto;
+  background-image: url("../img/icons/plus.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {

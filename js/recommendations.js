@@ -34,12 +34,18 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 let currentIndex = 0;
 
+function isTextOverflowing(element) {
+    return element.scrollHeight > element.clientHeight;
+}
+
 function createRecommendations() {
     recommendations.forEach((rec, index) => {
         const content = template.content.cloneNode(true);
         const card = content.querySelector('.recommendation');
         
-        card.querySelector('p').textContent = rec.text;
+        const textContainer = card.querySelector('.text-container');
+        const textElement = textContainer.querySelector('p');
+        textElement.textContent = rec.text;
         
         const starsContainer = card.querySelector('.stars');
         for (let i = 0; i < rec.stars; i++) {
@@ -51,7 +57,43 @@ function createRecommendations() {
 
         if (index === 0) card.classList.add('active');
         recommendationCards.appendChild(card);
+
+        createIndicators(card);
+
+        setTimeout(() => {
+            if (isTextOverflowing(textContainer)) {
+                const expandButton = document.createElement('button');
+                expandButton.textContent = 'קרא עוד';
+                expandButton.className = 'expand-button';
+                expandButton.addEventListener('click', () => expandText(card, textContainer, expandButton));
+                card.insertBefore(expandButton, card.querySelector('.indicator-container'));
+            }
+        }, 0);
     });
+}
+
+function createIndicators(card) {
+    const indicatorContainer = card.querySelector('.indicator-container');
+    recommendations.forEach((_, index) => {
+        const indicator = document.createElement('div');
+        indicator.className = 'rec-indicator';
+        if (index === 0) indicator.classList.add('active');
+        indicator.addEventListener('click', () => {
+            showRecommendation(index);
+        });
+        indicatorContainer.appendChild(indicator);
+    });
+}
+
+function expandText(card, textContainer, button) {
+    card.classList.toggle('expanded');
+    if (card.classList.contains('expanded')) {
+        button.textContent = 'קרא פחות';
+        textContainer.style.height = 'auto';
+    } else {
+        button.textContent = 'קרא עוד';
+        textContainer.style.height = '130px'; 
+    }
 }
 
 function showRecommendation(index) {
@@ -62,6 +104,21 @@ function showRecommendation(index) {
         } else {
             card.classList.remove('active');
         }
+    });
+    updateIndicators(index);
+}
+
+function updateIndicators(index) {
+    const cards = recommendationCards.querySelectorAll('.recommendation');
+    cards.forEach((card) => {
+        const indicators = card.querySelectorAll('.rec-indicator');
+        indicators.forEach((indicator, i) => {
+            if (i === index) {
+                indicator.classList.add('active');
+            } else {
+                indicator.classList.remove('active');
+            }
+        });
     });
 }
 
@@ -77,14 +134,10 @@ function prevRecommendation() {
 
 prevBtn.addEventListener('click', () => {
     prevRecommendation();
-    stopAutoSwitch();
-    startAutoSwitch();
 });
 
 nextBtn.addEventListener('click', () => {
     nextRecommendation();
-    stopAutoSwitch();
-    startAutoSwitch();
 });
 
 createRecommendations();

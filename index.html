@@ -250,29 +250,32 @@
         <span></span>
         <h3>מטופלים מספרים</h3>
     </div>
+   
+
     <section class="recommendation-section">
         <div class="recommendation-container">
-        <button class="nav-button" id="prevBtn">
-            <i class="fa fa-chevron-left"></i>
-        </button>
-        <div id="recommendationCards"></div>
-        <button class="nav-button" id="nextBtn">
-            <i class="fa fa-chevron-right"></i>
-        </button>
-    </div>
+            <button class="nav-button" id="prevBtn">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+            <div id="recommendationCards"></div>
+            <button class="nav-button" id="nextBtn">
+                <i class="fa fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
 
     <template id="recommendationTemplate">
         <div class="recommendation">
             <div>
                 <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <div class="stars"></div>
             </div>
-            <div>
+            <div class="text-container">
                 <p></p>
             </div>
-            <div class="stars"></div>
+            <div class="indicator-container"></div>
         </div>
     </template>
-    </section>
     
     <!--/ Recommendations -->
     

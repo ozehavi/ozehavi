@@ -32,12 +32,17 @@ function adjustRowHeights() {
     const toggleIcon = card.querySelector('.toggle-icon');
     console.log("card.classList",card.classList)
     if (card.classList.contains('expanded')) {
-        description.style.display = 'block';
-        toggleIcon.style.backgroundImage = `url("img/icons/minus.png")`;
-      } else {
-        description.style.display = 'none';
-        toggleIcon.style.backgroundImage = `url("img/icons/plus.png")`;
-      }
+      description.style.display = 'block';
+      toggleIcon.style.backgroundImage = `url("img/icons/minus.png")`;
+    } else {
+      description.style.display = 'none';
+      toggleIcon.style.backgroundImage = `url("img/icons/plus.png")`;
+    }
+
+    // Accecibility
+    const isExpanded = card.getAttribute('aria-expanded') === 'true';
+    card.setAttribute('aria-expanded', !isExpanded);
+    description.style.display = isExpanded ? 'none' : 'block';
 
     adjustRowHeights();
   }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="he">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFSXCVNJ96"></script>
@@ -45,7 +45,7 @@
 
     <!-- header-start -->
     <div id="top"></div>    
-    <header>
+    <header role="banner">
         <div class="header-area">
             <div id="sticky-header" class="main-header-area">
                 <div class="container-fluid">
@@ -59,12 +59,12 @@
                         </div>
                         <div class="col-xl-6 col-lg-7">
                             <div class="main-menu  d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a href="#contact">צרו קשר</a></li>
-                                        <li><a href="#about_me">קצת עליי</a></li>
-                                        <li><a href="#gallery">גלריה</a></li>
-                                        <li><a href="#service_area">סוגי טיפולים</a></li>
+                                <nav role="navigation">
+                                    <ul id="navigation" role="menu">
+                                        <li role="menuitem"><a href="#contact">צרו קשר</a></li>
+                                        <li role="menuitem"><a href="#about_me">קצת עליי</a></li>
+                                        <li role="menuitem"><a href="#gallery">גלריה</a></li>
+                                        <li role="menuitem"><a href="#service_area">סוגי טיפולים</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -87,247 +87,252 @@
     </header>
     <!-- header-end -->
 
-    <!-- slider_area_start -->
-    <div class="slider_area">
-        <div class="single_slider  d-flex align-items-center slider_bg_1">
-            <div class="shap_pattern d-none d-lg-block">
-                <img src="img/about/grid.png" alt="">
-            </div>            
+    <!-- main content area -->
+    <main id="main-content" role="main">
+
+        <!-- slider_area_start -->
+        <div class="slider_area">
+            <div class="single_slider  d-flex align-items-center slider_bg_1">
+                <div class="shap_pattern d-none d-lg-block">
+                    <img src="img/about/grid.png" alt="Pattern grid image">
+                </div>            
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-12">
+                            <div class="slider_text text-center">
+                                <h3>מאיה זהבי</h3>
+                                <h3 class="job-title">
+                                    פיזיותרפיסטית מוסמכת
+                                </h3>
+                                <span class="job-description">
+                                מתמחה בשיקום אורתופדי ופציעות ספורט                     
+                                </span>
+                            </div>
+                            <div class="social_links">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/maya.botbol" target="_blank"><i class="fa fa-facebook"></i> </a></li>
+                                    <li><a href="https://www.instagram.com/mayabotbol94" target="_blank"><i class="fa fa-instagram"></i> </a></li>
+                                    <li><a href="https://www.rb.gy/2xjkc8" target="_blank"><i class="fa fa-whatsapp"></i> </a></li>
+                                    <li><a class="call-link" href="tel:0546351044" target="_blank"><i class="fa fa-phone"></i> </a></li>
+                                </ul>
+                            </div>
+                            <div class="scroll_btn">
+                                <a href="#service_area">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fa6-solid" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0a256 256 0 1 0 0 512a256 256 0 1 0 0-512M135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87l87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0z"></path></svg>
+                                </a>                            
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider_area_end -->
+        
+        <!-- service_area  -->
+        <!-- https://www.flaticon.com/free-icons/physiotherapy -->
+        <div class="service_area" id="service_area">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row">
                     <div class="col-xl-12">
-                        <div class="slider_text text-center">
-                            <h3>מאיה זהבי</h3>
-                            <h3 class="job-title">
-                                פיזיותרפיסטית מוסמכת
-                            </h3>
-                            <span class="job-description">
-                               מתמחה בשיקום אורתופדי ופציעות ספורט                     
-                            </span>
-                        </div>
-                        <div class="social_links">
-                            <ul>
-                                <li><a href="https://www.facebook.com/maya.botbol" target="_blank"><i class="fa fa-facebook"></i> </a></li>
-                                <li><a href="https://www.instagram.com/mayabotbol94" target="_blank"><i class="fa fa-instagram"></i> </a></li>
-                                <li><a href="https://www.rb.gy/2xjkc8" target="_blank"><i class="fa fa-whatsapp"></i> </a></li>
-                                <li><a class="call-link" href="tel:0546351044" target="_blank"><i class="fa fa-phone"></i> </a></li>
-                            </ul>
-                        </div>
-                        <div class="scroll_btn">
-                            <a href="#service_area">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fa6-solid" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0a256 256 0 1 0 0 512a256 256 0 1 0 0-512M135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87l87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0z"></path></svg>
-                            </a>                            
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider_area_end -->
-    
-    <!-- service_area  -->
-    <!-- https://www.flaticon.com/free-icons/physiotherapy -->
-    <div class="service_area" id="service_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title text-center mb-65">                        
-                        <span></span>
-                        <h3 class="h3-blue">סוגי טיפולים</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_service text-center" onclick="toggleDescription(this)">
-                        <div class="service-card-icon"><img src="img/icons/surgery.svg" alt="https://www.flaticon.com/free-icons/"></div>
-                        <div class="service-card-title">שיקום אחרי ניתוח אורתופדי</div>
-                        <div class="service-card-description">ליווי החל מהיום הראשון לאחר הניתוח ועד לחזרה לתפקוד מלא, בין אם מדובר בניתוח לאחר חבלה או ניתוח מתוכנן לצורך שיפור באיכות החיים.</div>
-                        <span class="toggle-icon"></span>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_service text-center" onclick="toggleDescription(this)">
-                        <div class="service-card-icon"><img src="img/icons/pain.svg" alt="https://www.flaticon.com/free-icons/"></div>
-                        <div class="service-card-title">טיפול בכאב כרוני</div>
-                        <div class="service-card-description">שימוש בטכניקות מנואליות להקלה על כאב בשילוב הסבר על מקור הכאב.</div>
-                        <span class="toggle-icon"></span>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_service text-center" onclick="toggleDescription(this)">
-                        <div class="service-card-icon"><img src="img/icons/sport.svg" alt="https://www.flaticon.com/free-icons/"></div>
-                        <div class="service-card-title">טיפול בפציעות ספורט</div>
-                        <div class="service-card-description">טיפול בפציעות ממגוון ענפי הספורט, לספורטאים מקצוענים וחובבנים כאחד. הקליניקה מאובזרת ברמה הגבוהה ביותר על מנת לתת מענה לספורטאים לחזור לפעילות במהירות האפשרית.</div>
-                        <span class="toggle-icon"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_service text-center" onclick="toggleDescription(this)">
-                        <div class="service-card-icon"><img src="img/icons/house.svg" alt="https://www.flaticon.com/free-icons/"></div>
-                        <div class="service-card-title">ביקורי בית</div>
-                        <div class="service-card-description">חלק מהמטופלים מתקשים ביציאה מהבית וצריכים טיפול שתואם את תפקודם הנוכחי, ביקורי בית מתבצעים בראשל"צ והסביבה.</div>
-                        <span class="toggle-icon"></span>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_service text-center" onclick="toggleDescription(this)">
-                        <div class="service-card-icon"><img src="img/icons/equipment.svg" alt="https://www.flaticon.com/free-icons/"></div>
-                        <div class="service-card-title">שימוש במכשור מתקדם</div>
-                        <div class="service-card-description">שימוש בTENS ואולטרסאונד טיפולי.</div>
-                        <span class="toggle-icon"></span>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_service text-center" onclick="toggleDescription(this)">
-                        <div class="service-card-icon"><img src="img/icons/acupuncture.svg" alt="https://www.flaticon.com/free-icons/"></div>
-                        <div class="service-card-title">דיקור יבש/ מערבי</div>
-                        <div class="service-card-description">טיפול לצורך הפחתת כאב ושיפור טווחי תנועה שנובעים ממקור שרירי.</div>
-                        <span class="toggle-icon"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>    
-    <!--/ service_area  -->
-    
-    <!-- gallery -->
-    <div class="portfolio_area portfolio_bg_1" id="gallery">
-        <div class="portfolio-container">
-            <div class="portfolio">
-                <div class="portfolio-inner">
-                    <div class="portfolio-item"><img src="img/portfolio/1.png" alt="Image 1"></div>
-                    <div class="portfolio-item"><img src="img/portfolio/2.png" alt="Image 2"></div>
-                    <div class="portfolio-item"><img src="img/portfolio/3.png" alt="Image 3"></div>
-                    <div class="portfolio-item"><img src="img/portfolio/4.png" alt="Image 4"></div>
-                    <div class="portfolio-item"><img src="img/portfolio/5.png" alt="Image 5"></div>
-                </div>
-                <button class="imageBtn prev"><i class="fa fa-chevron-left"></i></button>
-                <button class="imageBtn next"><i class="fa fa-chevron-right"></i></button>
-                <div class="portfolio-indicators"></div>
-            </div>
-        </div>
-    </div>
-    <!--/ gallery -->   
-    
-    <!-- about_me  -->
-    <div class="about_me" id="about_me">
-        <div class="about_large_title d-none d-lg-block">
-            קצת עלי
-        </div>
-        <div class="container">
-            <div class="row align-items-center">                
-                <div class="col-xl-6 col-md-6">
-                    <div class="about_img">
-                        <div class="color_pattern d-none d-lg-block">
-                            <img src="img/about/color_grid.png" alt="">
-                        </div>
-                        <div class="my_Pic">
-                                <img src="img/about/BPT.png" alt="">
+                        <div class="section_title text-center mb-65">                        
+                            <span></span>
+                            <h3 class="h3-blue">סוגי טיפולים</h3>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-md-6">
-                    <div class="about_e_details">
-                        <h3>קצת עליי</h3>
-                        <p>מאיה זהבי (בוטבול) בוגרת אוניברסיטת אריאל בהצטיינות בלימודי פיזיותרפיה, מסיום לימודיי אני מטפלת בעיקר בשיקום אורתופדי ופציעות ספורט.
-                            הטיפול ניתן בקליניקה פרטית, קבוצות ספורט בליגת העל וקופת חולים.</p>
-                        <p>בנוסף להיותי פיזיותרפיסטית אני מדריכת חדר כושר ונעזרת בכל האביזרים הנדרשים על מנת להגיע לתוצאות הטובות ביותר.</p>
-                        <p>אחד העקרונות המנחים אותי בטיפול הוא התאמה למטופל והחזרתו לתפקוד מקסימלי.</p>
-                        <p>אני מאמינה בליווי וייעוץ למטופלים גם לאחר סיום הטיפול בקליניקה ושמחה שנפלה בחלקי הזכות לעזור לאנשים להפחית כאב לשפר תפקוד ואיכות חיים.</p>
-                        <p>אני אוהבת את העבודה שלי, נהנית מהתהליך והתוצאות, אני מאמינה שהנוסחה המנצחת היא מקצועיות, הקשבה וטיפול מותאם.</p>
+                <div class="row">
+                    <div class="col-xl-4 col-md-4">
+                        <div class="single_service text-center" onclick="toggleDescription(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="description1">
+                            <div class="service-card-icon"><img src="img/icons/surgery.svg" alt="Orthopedic Surgery Rehabilitation Icon"></div>
+                            <div class="service-card-title">שיקום אחרי ניתוח אורתופדי</div>
+                            <div class="service-card-description">ליווי החל מהיום הראשון לאחר הניתוח ועד לחזרה לתפקוד מלא, בין אם מדובר בניתוח לאחר חבלה או ניתוח מתוכנן לצורך שיפור באיכות החיים.</div>
+                            <span class="toggle-icon"></span>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4">
+                        <div class="single_service text-center" onclick="toggleDescription(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="description2">
+                            <div class="service-card-icon"><img src="img/icons/pain.svg" alt="Chronic Pain Treatment Icon"></div>
+                            <div class="service-card-title">טיפול בכאב כרוני</div>
+                            <div class="service-card-description">שימוש בטכניקות מנואליות להקלה על כאב בשילוב הסבר על מקור הכאב.</div>
+                            <span class="toggle-icon"></span>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4">
+                        <div class="single_service text-center" onclick="toggleDescription(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="description3">
+                            <div class="service-card-icon"><img src="img/icons/sport.svg" alt="Sports Injuries Treatment Icon"></div>
+                            <div class="service-card-title">טיפול בפציעות ספורט</div>
+                            <div class="service-card-description">טיפול בפציעות ממגוון ענפי הספורט, לספורטאים מקצוענים וחובבנים כאחד. הקליניקה מאובזרת ברמה הגבוהה ביותר על מנת לתת מענה לספורטאים לחזור לפעילות במהירות האפשרית.</div>
+                            <span class="toggle-icon"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-md-4">
+                        <div class="single_service text-center" onclick="toggleDescription(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="description4">
+                            <div class="service-card-icon"><img src="img/icons/house.svg" alt="Home Visits Icon"></div>
+                            <div class="service-card-title">ביקורי בית</div>
+                            <div class="service-card-description">חלק מהמטופלים מתקשים ביציאה מהבית וצריכים טיפול שתואם את תפקודם הנוכחי, ביקורי בית מתבצעים בראשל"צ והסביבה.</div>
+                            <span class="toggle-icon"></span>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4">
+                        <div class="single_service text-center" onclick="toggleDescription(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="description5">
+                            <div class="service-card-icon"><img src="img/icons/equipment.svg" alt="Advanced Equipment Usage Icon"></div>
+                            <div class="service-card-title">שימוש במכשור מתקדם</div>
+                            <div class="service-card-description">שימוש בTENS ואולטרסאונד טיפולי.</div>
+                            <span class="toggle-icon"></span>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4">
+                        <div class="single_service text-center" onclick="toggleDescription(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="description6">
+                            <div class="service-card-icon"><img src="img/icons/acupuncture.svg" alt="Dry/Western Needling Icon"></div>
+                            <div class="service-card-title">דיקור יבש/ מערבי</div>
+                            <div class="service-card-description">טיפול לצורך הפחתת כאב ושיפור טווחי תנועה שנובעים ממקור שרירי.</div>
+                            <span class="toggle-icon"></span>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>    
+        <!--/ service_area  -->
+        
+        <!-- gallery -->
+        <div class="portfolio_area portfolio_bg_1" id="gallery">
+            <div class="portfolio-container">
+                <div class="portfolio">
+                    <div class="portfolio-inner">
+                        <div class="portfolio-item"><img src="img/portfolio/1.png" alt="portfolio image #1"></div>
+                        <div class="portfolio-item"><img src="img/portfolio/2.png" alt="portfolio image #2"></div>
+                        <div class="portfolio-item"><img src="img/portfolio/3.png" alt="portfolio image #3"></div>
+                        <div class="portfolio-item"><img src="img/portfolio/4.png" alt="portfolio image #4"></div>
+                        <div class="portfolio-item"><img src="img/portfolio/5.png" alt="portfolio image #5"></div>
+                    </div>
+                    <button class="imageBtn prev"><i class="fa fa-chevron-left"></i></button>
+                    <button class="imageBtn next"><i class="fa fa-chevron-right"></i></button>
+                    <div class="portfolio-indicators"></div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!--/ about_me  -->
-
-    <!-- Recommendations -->
-    <div class="recommendation-title text-center">                        
-        <span></span>
-        <h3>מטופלים מספרים</h3>
-    </div>
-    <section class="recommendation-section">
-        <div class="recommendation-container">
-        <button class="nav-button" id="prevBtn">
-            <i class="fa fa-chevron-left"></i>
-        </button>
-        <div id="recommendationCards"></div>
-        <button class="nav-button" id="nextBtn">
-            <i class="fa fa-chevron-right"></i>
-        </button>
-    </div>
-
-    <template id="recommendationTemplate">
-        <div class="recommendation">
-            <div>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
+        <!--/ gallery -->   
+        
+        <!-- about_me  -->
+        <div class="about_me" id="about_me">
+            <div class="about_large_title d-none d-lg-block">
+                קצת עלי
             </div>
-            <div>
-                <p></p>
-            </div>
-            <div class="stars"></div>
-        </div>
-    </template>
-    </section>
-    
-    <!--/ Recommendations -->
-    
-    <div class="contact" id="contact">
-        <div class="container">
-            <div class="section_title text-center mb-65">
-                <span>צרו איתי קשר</span>
-                <h3 class="h3-white">תקבעו את הטיפול שלכם עוד היום</h3>
-                <div class="socail_links">
-                    <ul>
-                        <li><a href="https://www.facebook.com/maya.botbol" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/mayabotbol94" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://www.rb.gy/2xjkc8" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
-                        <li><a class="call-link" href="tel:0546351044" target="_blank"><i class="fa fa-phone"></i> </a></li>
-                    </ul>
-                </div>         
-            </div>
-            <div class="row">                
-                <div class="col-xl-6 col-lg-6">
-                    <div class="contact_form_area">
-                        <div class="row">
-                            <div class="col-xl-10 offset-xl-1">
-                                <!-- https://forms.un-static.com/ -->
-                                <form action="https://forms.un-static.com/forms/78335e00d6da94b51d60c2926093464d6988e4e2                                " method="POST" id="contact_form">
-                                    <div class="form-group">
-                                        <label for="full_name">שם מלא:</label>
-                                        <input type="text" class="form-control" id="full_name" name="full_name" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="phone">טלפון:</label>
-                                        <input type="text" class="form-control" id="phone" name="phone" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="description">הודעה:</label>
-                                        <textarea class="form-control" id="description" name="description" rows="5" required></textarea>
-                                    </div>
-                                    <div class="form-group text-center">
-                                        <button type="submit" class="boxed-btn3">שלח</button>
-                                    </div>
-                                </form>
+            <div class="container">
+                <div class="row align-items-center">                
+                    <div class="col-xl-6 col-md-6">
+                        <div class="about_img">
+                            <div class="color_pattern d-none d-lg-block">
+                                <img src="img/about/color_grid.png" alt="colored grid">
+                            </div>
+                            <div class="my_Pic">
+                                    <img src="img/about/BPT.png" alt="maya BPT certificate">
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="contact_map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.962162244056!2d34.771329212632715!3d31.989041173894456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502b380abbb8743%3A0xb550aec94bbb1c53!2sMoshe%20Levi%20St%2011%2C%20Rishon%20LeTsiyon!5e0!3m2!1sen!2sil!4v1717245496168!5m2!1sen!2sil" width="400" height="300" style="border:0;border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="about_e_details">
+                            <h3>קצת עליי</h3>
+                            <p>מאיה זהבי (בוטבול) בוגרת אוניברסיטת אריאל בהצטיינות בלימודי פיזיותרפיה, מסיום לימודיי אני מטפלת בעיקר בשיקום אורתופדי ופציעות ספורט.
+                                הטיפול ניתן בקליניקה פרטית, קבוצות ספורט בליגת העל וקופת חולים.</p>
+                            <p>בנוסף להיותי פיזיותרפיסטית אני מדריכת חדר כושר ונעזרת בכל האביזרים הנדרשים על מנת להגיע לתוצאות הטובות ביותר.</p>
+                            <p>אחד העקרונות המנחים אותי בטיפול הוא התאמה למטופל והחזרתו לתפקוד מקסימלי.</p>
+                            <p>אני מאמינה בליווי וייעוץ למטופלים גם לאחר סיום הטיפול בקליניקה ושמחה שנפלה בחלקי הזכות לעזור לאנשים להפחית כאב לשפר תפקוד ואיכות חיים.</p>
+                            <p>אני אוהבת את העבודה שלי, נהנית מהתהליך והתוצאות, אני מאמינה שהנוסחה המנצחת היא מקצועיות, הקשבה וטיפול מותאם.</p>
+                        </div>
                     </div>
-                </div>              
+                </div>
             </div>
         </div>
-    </div>
-  
+        <!--/ about_me  -->
+
+        <!-- Recommendations -->
+        <div class="recommendation-title text-center">                        
+            <span></span>
+            <h3>מטופלים מספרים</h3>
+        </div>
+        <section class="recommendation-section">
+            <div class="recommendation-container">
+            <button class="nav-button" id="prevBtn">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+            <div id="recommendationCards"></div>
+            <button class="nav-button" id="nextBtn">
+                <i class="fa fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <template id="recommendationTemplate">
+            <div class="recommendation">
+                <div>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+                <div class="stars"></div>
+            </div>
+        </template>
+        </section>
+        
+        <!--/ Recommendations -->
+        
+        <div class="contact" id="contact">
+            <div class="container">
+                <div class="section_title text-center mb-65">
+                    <span>צרו איתי קשר</span>
+                    <h3 class="h3-white">תקבעו את הטיפול שלכם עוד היום</h3>
+                    <div class="socail_links">
+                        <ul>
+                            <li><a href="https://www.facebook.com/maya.botbol" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/mayabotbol94" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.rb.gy/2xjkc8" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a class="call-link" href="tel:0546351044" target="_blank"><i class="fa fa-phone"></i> </a></li>
+                        </ul>
+                    </div>         
+                </div>
+                <div class="row">                
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="contact_form_area">
+                            <div class="row">
+                                <div class="col-xl-10 offset-xl-1">
+                                    <!-- https://forms.un-static.com/ -->
+                                    <form action="https://forms.un-static.com/forms/78335e00d6da94b51d60c2926093464d6988e4e2                                " method="POST" id="contact_form">
+                                        <div class="form-group">
+                                            <label for="full_name">שם מלא:</label>
+                                            <input type="text" class="form-control" id="full_name" name="full_name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone">טלפון:</label>
+                                            <input type="text" class="form-control" id="phone" name="phone" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="description">הודעה:</label>
+                                            <textarea class="form-control" id="description" name="description" rows="5" required></textarea>
+                                        </div>
+                                        <div class="form-group text-center">
+                                            <button type="submit" class="boxed-btn3">שלח</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="contact_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.962162244056!2d34.771329212632715!3d31.989041173894456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502b380abbb8743%3A0xb550aec94bbb1c53!2sMoshe%20Levi%20St%2011%2C%20Rishon%20LeTsiyon!5e0!3m2!1sen!2sil!4v1717245496168!5m2!1sen!2sil" width="400" height="300" style="border:0;border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>              
+                </div>
+            </div>
+        </div>
+
+    </main>
+
     <!-- footer start -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="copy-right_text">
             <div class="container">
                 <div class="footer_border"></div>
@@ -371,6 +376,7 @@ Copyright &copy2024 All rights reserved | This template is made with <i class="f
     <script src="js/recommendations.js"></script>
     <script src="js/services.js"></script>
 
-    <script src="https://cdn.enable.co.il/licenses/enable-L275880mkutfgip9-0724-61304/init.js"></script>
+     <!-- Accessibillity -->
+    <script src="https://cdn.enable.co.il/licenses/enable-L275880mkutfgip9-0724-61306/init.js"></script>
 </body>
 </html>

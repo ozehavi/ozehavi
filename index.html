@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="he">
+<html class="no-js" lang="he" >
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFSXCVNJ96"></script>
@@ -146,7 +146,7 @@
                         <div class="single_service text-center" onclick="toggleDescription(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="description1">
                             <div class="service-card-icon"><img src="img/icons/surgery.svg" alt="Orthopedic Surgery Rehabilitation Icon"></div>
                             <div class="service-card-title">שיקום אחרי ניתוח אורתופדי</div>
-                            <div class="service-card-description">ליווי החל מהיום הראשון לאחר הניתוח ועד לחזרה לתפקוד מלא, בין אם מדובר בניתוח לאחר חבלה או ניתוח מתוכנן לצורך שיפור באיכות החיים.</div>
+                            <div class="service-card-description" id="description1">ליווי החל מהיום הראשון לאחר הניתוח ועד לחזרה לתפקוד מלא, בין אם מדובר בניתוח לאחר חבלה או ניתוח מתוכנן לצורך שיפור באיכות החיים.</div>
                             <span class="toggle-icon"></span>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
                         <div class="single_service text-center" onclick="toggleDescription(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="description2">
                             <div class="service-card-icon"><img src="img/icons/pain.svg" alt="Chronic Pain Treatment Icon"></div>
                             <div class="service-card-title">טיפול בכאב כרוני</div>
-                            <div class="service-card-description">שימוש בטכניקות מנואליות להקלה על כאב בשילוב הסבר על מקור הכאב.</div>
+                            <div class="service-card-description" id="description2">שימוש בטכניקות מנואליות להקלה על כאב בשילוב הסבר על מקור הכאב.</div>
                             <span class="toggle-icon"></span>
                         </div>
                     </div>
@@ -162,7 +162,7 @@
                         <div class="single_service text-center" onclick="toggleDescription(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="description3">
                             <div class="service-card-icon"><img src="img/icons/sport.svg" alt="Sports Injuries Treatment Icon"></div>
                             <div class="service-card-title">טיפול בפציעות ספורט</div>
-                            <div class="service-card-description">טיפול בפציעות ממגוון ענפי הספורט, לספורטאים מקצוענים וחובבנים כאחד. הקליניקה מאובזרת ברמה הגבוהה ביותר על מנת לתת מענה לספורטאים לחזור לפעילות במהירות האפשרית.</div>
+                            <div class="service-card-description" id="description3">טיפול בפציעות ממגוון ענפי הספורט, לספורטאים מקצוענים וחובבנים כאחד. הקליניקה מאובזרת ברמה הגבוהה ביותר על מנת לתת מענה לספורטאים לחזור לפעילות במהירות האפשרית.</div>
                             <span class="toggle-icon"></span>
                         </div>
                     </div>
@@ -172,7 +172,7 @@
                         <div class="single_service text-center" onclick="toggleDescription(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="description4">
                             <div class="service-card-icon"><img src="img/icons/house.svg" alt="Home Visits Icon"></div>
                             <div class="service-card-title">ביקורי בית</div>
-                            <div class="service-card-description">חלק מהמטופלים מתקשים ביציאה מהבית וצריכים טיפול שתואם את תפקודם הנוכחי, ביקורי בית מתבצעים בראשל"צ והסביבה.</div>
+                            <div class="service-card-description" id="description4">חלק מהמטופלים מתקשים ביציאה מהבית וצריכים טיפול שתואם את תפקודם הנוכחי, ביקורי בית מתבצעים בראשל"צ והסביבה.</div>
                             <span class="toggle-icon"></span>
                         </div>
                     </div>
@@ -180,7 +180,7 @@
                         <div class="single_service text-center" onclick="toggleDescription(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="description5">
                             <div class="service-card-icon"><img src="img/icons/equipment.svg" alt="Advanced Equipment Usage Icon"></div>
                             <div class="service-card-title">שימוש במכשור מתקדם</div>
-                            <div class="service-card-description">שימוש בTENS ואולטרסאונד טיפולי.</div>
+                            <div class="service-card-description" id="description5">שימוש בTENS ואולטרסאונד טיפולי.</div>
                             <span class="toggle-icon"></span>
                         </div>
                     </div>
@@ -188,7 +188,7 @@
                         <div class="single_service text-center" onclick="toggleDescription(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="description6">
                             <div class="service-card-icon"><img src="img/icons/acupuncture.svg" alt="Dry/Western Needling Icon"></div>
                             <div class="service-card-title">דיקור יבש/ מערבי</div>
-                            <div class="service-card-description">טיפול לצורך הפחתת כאב ושיפור טווחי תנועה שנובעים ממקור שרירי.</div>
+                            <div class="service-card-description" id="description6">טיפול לצורך הפחתת כאב ושיפור טווחי תנועה שנובעים ממקור שרירי.</div>
                             <span class="toggle-icon"></span>
                         </div>
                     </div>
@@ -256,27 +256,27 @@
         </div>
         <div class="recommendation-section">
             <div class="recommendation-container">
-            <button class="nav-button" id="prevBtn">
-                <i class="fa fa-chevron-left"></i>
-            </button>
-            <div id="recommendationCards"></div>
-            <button class="nav-button" id="nextBtn">
-                <i class="fa fa-chevron-right"></i>
-            </button>
-        </div>
+                <button class="nav-button" id="prevBtn">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <div id="recommendationCards"></div>
+                <button class="nav-button" id="nextBtn">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+             </div>
 
-        <template id="recommendationTemplate">
-            <div class="recommendation">
-                <div>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+            <template id="recommendationTemplate">
+                <div class="recommendation">
+                    <div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p></p>
+                    </div>
+                    <div class="stars"></div>
                 </div>
-                <div>
-                    <p></p>
-                </div>
-                <div class="stars"></div>
-            </div>
-        </template>
-        </section>
+            </template>
+        </div>
         
         <!--/ Recommendations -->
         

@@ -14,23 +14,31 @@ $(window).on('scroll', function () {
 
 $(document).ready(function(){
 
-// mobile_menu
-var menu = $('ul#navigation');
-console.log("menu", menu)
-if(menu.length){
-	menu.slicknav({
-		prependTo: ".mobile_menu",
-		closedSymbol: '+',
-		openedSymbol:'-'
-	});
-};
+  //form validation
+  document.getElementById('contact_form').addEventListener('submit', function(event) {
+    const textarea = document.getElementById('description');
+    const hebrewPattern = /^[\u0590-\u05FF\s]+$/;
+    if (textarea.value && !hebrewPattern.test(textarea.value)) {
+        event.preventDefault(); // Prevent form submission
+        alert('נא לכתוב את ההודעה בעברית בלבד.');
+    }
+  });
 
-$('.slicknav_nav a').on('click', function(){
-  console.log("click")
-    menu.slicknav('close');
 
-});
+  // mobile_menu
+  var menu = $('ul#navigation');
+  if(menu.length){
+    menu.slicknav({
+      prependTo: ".mobile_menu",
+      closedSymbol: '+',
+      openedSymbol:'-'
+    });
+  };
 
+  $('.slicknav_nav a').on('click', function(){
+    console.log("click")
+      menu.slicknav('close');
+  });
 
 // review-active
 $('.slider_active').owlCarousel({

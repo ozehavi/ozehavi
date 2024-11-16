@@ -8,18 +8,9 @@ $(function() {
 
 	// Set up an event listener for the contact form.
 	$(form).submit(function(e) {
+		console.log('form submitted');
 		// Stop the browser from submitting the form.
 		e.preventDefault();
-
-		// Validate the textarea for Hebrew characters.
-        var description = $('#description').val();
-        var hebrewRegex = /[\u0590-\u05FF]/; // Regular expression for Hebrew characters
-
-        if (description && !hebrewRegex.test(description)) {
-            // Display an error message if no Hebrew characters are found.
-            alert('אנא כתוב את ההודעה בעברית.');
-            return; // Stop form submission
-        }
 
 		// Serialize the form data.
 		var formData = $(form).serialize();

@@ -14,17 +14,6 @@ $(window).on('scroll', function () {
 
 $(document).ready(function(){
 
-  //form validation
-  document.getElementById('contact_form').addEventListener('submit', function(event) {
-    const textarea = document.getElementById('description');
-    const hebrewPattern = /^[\u0590-\u05FF\s]+$/;
-    if (textarea.value && !hebrewPattern.test(textarea.value)) {
-        event.preventDefault(); // Prevent form submission
-        alert('נא לכתוב את ההודעה בעברית בלבד.');
-    }
-  });
-
-
   // mobile_menu
   var menu = $('ul#navigation');
   if(menu.length){
